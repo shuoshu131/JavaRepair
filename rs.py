@@ -120,10 +120,7 @@ class DiffParser:
                     is_first_func = 1
                 else:
                     default_functions = None
-                if is_in_hunk == 1:
-                    #为什么这里要更新pointer？？？
-                    pointer = index  # 更新指针到当前行
-                    is_in_hunk = 0
+                is_in_hunk = 0  # 重置 Hunk 标志位
                 is_comment = 0  # 重置注释标志位
                 continue
             
@@ -159,39 +156,25 @@ class DiffParser:
             if line.find("import") == -1:
                 if line[0] == '-' or line[0] == "+":
                     if any(line.startswith(ignore) for ignore in ["+++", "---"]):
-                        #说明开头为+++   或  ---
-                        if is_in_hunk == 1:
-                            pointer = index
-                            is_in_hunk = 0
+                        #说明开头为+++或者---，跳过
                         continue
 
 
                     #从此往后就是以+或者-开头的修改行
-                    if bool(empty_or_whitespace_pattern.match(line[1:])):
+                    if bool(empty_or_whitespace_pattern.match(line[1:])) or single_line_comment_pattern.match(line):
                         if is_in_hunk == 1:
                             pointer = index
                         continue
 
-                    #tmd什么意思
-                    #is_in_hunk = 1
-
-                    #处理注释
-                    if single_line_comment_pattern.match(line):
-                        if pointer == -1:
-                            continue
-                        if is_in_hunk == 1:
-                            pointer = index
-                        continue
 
                     #处理多行注释
                     if multi_line_comment_start_pattern.match(line):
-                        if pointer == -1:
-                            is_comment = 1
-                            continue
                         is_comment = 1
                         if is_in_hunk == 1:
                             pointer = index
                         continue
+
+
 
                     if pointer == -1:
                         pointer = index
@@ -213,9 +196,10 @@ class DiffParser:
                         print("line:", line)
                     else:
                         if index == (pointer + 1):
-                            if is_in_hunk == 1:
-                                pointer = index
+                            is_in_hunk=1
+                            pointer = index
                         else:
+                            #cnm
                             if is_in_hunk == 1:
                                 pointer = index
                             hunk += 1
@@ -239,7 +223,7 @@ class DiffParser:
         # if is_in_hunk == 1:
         #     hunk += 1
         print(hunk)
-        return hunk
+        return hunk, functions
 
     def parse_file(self):
         """
