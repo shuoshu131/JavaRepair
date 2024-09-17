@@ -105,20 +105,23 @@ class DiffParser:
         is_in_hunk = 0  # 标志位，表示是否在 Hunk 中
         is_comment = 0  # 标志位，表示是否在注释中
         is_test_case = 0  # 标志位，表示是否为测试用例文件
+        is_java_file = 1 # 标志位，表示是否为 Java 文件
         functions = []  # 函数名集合
-        func_pattern = re.compile(r'^\s*(public|private|protected)?\s*(static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
+        func_pattern = re.compile(r'^\s*(?:public|private|protected|static|final|synchronized|abstract|native)?'
+                                  r'\s*(?:static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
 
         for index, line in enumerate(self.lines, start=1):
             print(line)
             if line.startswith('@@'):
                 match = re.search(func_pattern, line)
                 if match:
-                    function_name = f"{match.group(3)}({match.group(4)})"
+                    function_name = f"{match.group(1)}({match.group(2)})"
                     default_functions = function_name
                     is_first_func = 1
                 else:
                     default_functions = None
                 if is_in_hunk == 1:
+                    #为什么这里要更新pointer？？？
                     pointer = index  # 更新指针到当前行
                     is_in_hunk = 0
                 is_comment = 0  # 重置注释标志位
@@ -152,21 +155,27 @@ class DiffParser:
                 continue
 
             # 处理修改行（+/-开头的行）
+            #如果行中没有找到import，认为是代码行
             if line.find("import") == -1:
                 if line[0] == '-' or line[0] == "+":
                     if any(line.startswith(ignore) for ignore in ["+++", "---"]):
+                        #说明开头为+++   或  ---
                         if is_in_hunk == 1:
                             pointer = index
                             is_in_hunk = 0
                         continue
 
+
+                    #从此往后就是以+或者-开头的修改行
                     if bool(empty_or_whitespace_pattern.match(line[1:])):
                         if is_in_hunk == 1:
                             pointer = index
                         continue
 
-                    is_in_hunk = 1
-                    
+                    #tmd什么意思
+                    #is_in_hunk = 1
+
+                    #处理注释
                     if single_line_comment_pattern.match(line):
                         if pointer == -1:
                             continue
@@ -174,6 +183,7 @@ class DiffParser:
                             pointer = index
                         continue
 
+                    #处理多行注释
                     if multi_line_comment_start_pattern.match(line):
                         if pointer == -1:
                             is_comment = 1
