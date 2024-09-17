@@ -92,7 +92,33 @@ class DiffParser:
         """
         self.lines = diff_output.splitlines(keepends=False)
         self.diff_output = diff_output
+        
+    def extract_functions(self, index):
+        """
+        向上查找直到找到 @@ 行，提取附近的函数定义。
 
+        参数:
+        - index: 当前行的索引。
+
+        返回:
+        - 找到的函数名或 None。
+        """
+        func_pattern = re.compile(r'^\s*(?:public|private|protected|static|final|synchronized|abstract|native)?'
+                                  r'\s*(?:static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
+
+        # 从当前行向上查找，直到找到 @@ 行
+        for i in range(index, 0, -1):
+            line = self.lines[i].strip()
+            if line.startswith('@@'):
+                print(f"Found @@ line: {line}")
+                break  # 找到 @@ 行时，停止查找
+            match = func_pattern.match(line)
+            if match:
+                function_name = f"{match.group(1)}({match.group(2)})"
+                return function_name
+
+        return None
+    
     def parse_hunk(self):
         """
         解析并统计 Hunk 的数量。Hunk 是指 diff 中的修改块。
@@ -111,7 +137,7 @@ class DiffParser:
                                   r'\s*(?:static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
 
         for index, line in enumerate(self.lines, start=1):
-            print(line)
+            # print(line)
             if line.startswith('@@'):
                 match = re.search(func_pattern, line)
                 if match:
@@ -120,6 +146,7 @@ class DiffParser:
                     is_first_func = 1
                 else:
                     default_functions = None
+                    is_first_func = 1
                 is_in_hunk = 0  # 重置 Hunk 标志位
                 is_comment = 0  # 重置注释标志位
                 continue
@@ -199,7 +226,6 @@ class DiffParser:
                             is_in_hunk=1
                             pointer = index
                         else:
-                            #cnm
                             if is_in_hunk == 1:
                                 pointer = index
                             hunk += 1
@@ -209,10 +235,10 @@ class DiffParser:
                             elif not is_first_func:
                                 function = None
                                 # 倒查diff至找到函数,返回值为函数名
-
+                                function = self.extract_functions(index)
                                 if default_functions is None and function is None:
                                     # 认为找不到hunk对应的函数，跳过
-                                    a=1 #占位
+                                    continue
                                 elif default_functions is not None and function is None:
                                     # 未找到函数，使用默认函数名
                                     functions.append(default_functions)
@@ -224,6 +250,8 @@ class DiffParser:
         #     hunk += 1
         print(hunk)
         return hunk, functions
+
+
 
     def parse_file(self):
         """
@@ -417,8 +445,8 @@ if __name__ == '__main__':
             parser = DiffParser(diff_output)
             with open(output_csv, 'a') as f:
                 file, java_file, test_in_commit = parser.parse_file()
-                hunk = parser.parse_hunk()
-                functions = len(parser.extract_functions())
+                result = parser.parse_hunk()
+                hunk, functions = parser.parse_hunk()
 
                 string = "URL: {}   Repo: {}   file: {}   java_file: {}   functions: {}   hunk: {}\n".format(url, repo, file, java_file, functions, hunk)
                 test_in_repo = 0
