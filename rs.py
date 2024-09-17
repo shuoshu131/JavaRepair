@@ -98,17 +98,26 @@ class DiffParser:
         解析并统计 Hunk 的数量。Hunk 是指 diff 中的修改块。
 
         返回:
-        - hunk: Hunk 的数量。
+        - hunk: Hunk 的数量。 function: 函数名集合。
         """
         pointer = -1  # 指针，用于记录行索引
         hunk = 0  # Hunk 的数量
         is_in_hunk = 0  # 标志位，表示是否在 Hunk 中
         is_comment = 0  # 标志位，表示是否在注释中
         is_test_case = 0  # 标志位，表示是否为测试用例文件
+        functions = []  # 函数名集合
+        func_pattern = re.compile(r'^\s*(public|private|protected)?\s*(static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
 
         for index, line in enumerate(self.lines, start=1):
             print(line)
             if line.startswith('@@'):
+                match = re.search(func_pattern, line)
+                if match:
+                    function_name = f"{match.group(3)}({match.group(4)})"
+                    default_functions = function_name
+                    is_first_func = 1
+                else:
+                    default_functions = None
                 if is_in_hunk == 1:
                     pointer = index  # 更新指针到当前行
                     is_in_hunk = 0
@@ -177,6 +186,19 @@ class DiffParser:
                     if pointer == -1:
                         pointer = index
                         hunk += 1
+                        if default_functions is not None and is_first_func:
+                            functions.append(default_functions)
+                            is_first_func = 0
+                        elif not is_first_func:
+                            function = None
+                            # 倒查diff至找到函数,返回值为函数名
+
+                            if default_functions is None and function is None:
+                                # 认为找不到hunk对应的函数，跳过
+                                a=1 #占位
+                            elif default_functions is not None and function is None:
+                                # 未找到函数，使用默认函数名
+                                functions.append(default_functions)
                         print("hunk:", hunk)
                         print("line:", line)
                     else:
@@ -187,6 +209,19 @@ class DiffParser:
                             if is_in_hunk == 1:
                                 pointer = index
                             hunk += 1
+                            if default_functions is not None and is_first_func:
+                                functions.append(default_functions)
+                                is_first_func = 0
+                            elif not is_first_func:
+                                function = None
+                                # 倒查diff至找到函数,返回值为函数名
+
+                                if default_functions is None and function is None:
+                                    # 认为找不到hunk对应的函数，跳过
+                                    a=1 #占位
+                                elif default_functions is not None and function is None:
+                                    # 未找到函数，使用默认函数名
+                                    functions.append(default_functions)
                             print("hunk:", hunk)
                             print("line:", line)
                 else:
@@ -229,103 +264,103 @@ class DiffParser:
         print("[test_in_commit]:", test_in_commit)
         return file, java_file, test_in_commit
     
-    def extract_diff_file_and_lines(self):
-        """
-        从 diff 输出中提取 Java 文件及其修改的行号范围。
+    # def extract_diff_file_and_lines(self):
+    #     """
+    #     从 diff 输出中提取 Java 文件及其修改的行号范围。
 
-        返回:
-        - files_and_ranges: 包含 Java 文件路径和行号范围的字典。
-        """
-        files_and_ranges = {}  # 存储 Java 文件路径和行号范围
-        current_file = None  # 当前文件路径
-        is_java_file = False  # 当前文件是否为 Java 文件
+    #     返回:
+    #     - files_and_ranges: 包含 Java 文件路径和行号范围的字典。
+    #     """
+    #     files_and_ranges = {}  # 存储 Java 文件路径和行号范围
+    #     current_file = None  # 当前文件路径
+    #     is_java_file = False  # 当前文件是否为 Java 文件
 
-        for line in self.lines:
-            if line.startswith('diff --git'):
-                match = re.search(r'diff --git a/(.*?) b/\1', line)
-                if match:
-                    current_file = match.group(1)
-                    is_java_file = current_file.endswith('.java')
-                    if is_java_file:
-                        files_and_ranges[current_file] = []
-                    else:
-                        current_file = None
+    #     for line in self.lines:
+    #         if line.startswith('diff --git'):
+    #             match = re.search(r'diff --git a/(.*?) b/\1', line)
+    #             if match:
+    #                 current_file = match.group(1)
+    #                 is_java_file = current_file.endswith('.java')
+    #                 if is_java_file:
+    #                     files_and_ranges[current_file] = []
+    #                 else:
+    #                     current_file = None
 
-            elif line.startswith('@@') and current_file and is_java_file:
-                hunk_header = re.search(r'@@ -\d+(?:,\d+)? \+(\d+)(?:,(\d+))? @@', line)
-                if hunk_header:
-                    start_line = int(hunk_header.group(1))
-                    line_count = int(hunk_header.group(2)) if hunk_header.group(2) else 1
-                    end_line = start_line + line_count - 1
-                    files_and_ranges[current_file].append((start_line, end_line))
+    #         elif line.startswith('@@') and current_file and is_java_file:
+    #             hunk_header = re.search(r'@@ -\d+(?:,\d+)? \+(\d+)(?:,(\d+))? @@', line)
+    #             if hunk_header:
+    #                 start_line = int(hunk_header.group(1))
+    #                 line_count = int(hunk_header.group(2)) if hunk_header.group(2) else 1
+    #                 end_line = start_line + line_count - 1
+    #                 files_and_ranges[current_file].append((start_line, end_line))
 
-        return files_and_ranges
+    #     return files_and_ranges
 
-    def extract_functions_from_file(self, file_path, start_line, end_line):
-        """
-        从 Java 文件中提取函数名。
+    # def extract_functions_from_file(self, file_path, start_line, end_line):
+    #     """
+    #     从 Java 文件中提取函数名。
 
-        参数:
-        - file_path: 文件路径。
-        - start_line: 起始行号。
-        - end_line: 结束行号。
+    #     参数:
+    #     - file_path: 文件路径。
+    #     - start_line: 起始行号。
+    #     - end_line: 结束行号。
 
-        返回:
-        - functions: 提取的函数名列表。
-        """
-        functions = []
-        func_pattern = re.compile(r'^\s*(public|private|protected)?\s*(static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
+    #     返回:
+    #     - functions: 提取的函数名列表。
+    #     """
+    #     functions = []
+    #     func_pattern = re.compile(r'^\s*(public|private|protected)?\s*(static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
 
-        try:
-            with open(file_path, 'r', encoding='utf-8') as file:
-                lines = file.readlines()
+    #     try:
+    #         with open(file_path, 'r', encoding='utf-8') as file:
+    #             lines = file.readlines()
                 
-                # 向前遍历直到第一个函数定义
-                found_function = False
-                i = start_line - 1
-                while i >= 0:
-                    line = lines[i].strip()
-                    match = func_pattern.match(line)
-                    if match:
-                        function_name = f"{match.group(3)}({match.group(4)})"
-                        functions.append(function_name)
-                        found_function = True
-                        break
-                    i -= 1
+    #             # 向前遍历直到第一个函数定义
+    #             found_function = False
+    #             i = start_line - 1
+    #             while i >= 0:
+    #                 line = lines[i].strip()
+    #                 match = func_pattern.match(line)
+    #                 if match:
+    #                     function_name = f"{match.group(3)}({match.group(4)})"
+    #                     functions.append(function_name)
+    #                     found_function = True
+    #                     break
+    #                 i -= 1
 
-                # 遍历修改的行号范围
-                for i in range(start_line - 1, min(end_line, len(lines))):
-                    line = lines[i].strip()
-                    match = func_pattern.match(line)
-                    if match:
-                        function_name = f"{match.group(3)}({match.group(4)})"
-                        functions.append(function_name)
+    #             # 遍历修改的行号范围
+    #             for i in range(start_line - 1, min(end_line, len(lines))):
+    #                 line = lines[i].strip()
+    #                 match = func_pattern.match(line)
+    #                 if match:
+    #                     function_name = f"{match.group(3)}({match.group(4)})"
+    #                     functions.append(function_name)
 
-        except FileNotFoundError:
-            print(f"File {file_path} not found.")
-        except Exception as e:
-            print(f"Error reading file {file_path}: {e}")
+    #     except FileNotFoundError:
+    #         print(f"File {file_path} not found.")
+    #     except Exception as e:
+    #         print(f"Error reading file {file_path}: {e}")
 
-        return functions
+    #     return functions
 
-    def extract_functions(self):
-        """
-        从 diff 输出中提取修改的函数名。
+    # def extract_functions(self):
+    #     """
+    #     从 diff 输出中提取修改的函数名。
 
-        返回:
-        - modified_functions: 修改的函数名列表。
-        """
-        modified_functions = [] # 存储修改的函数名
-        files_and_ranges = self.extract_diff_file_and_lines() # 提取 Java 文件及其修改的行号范围
+    #     返回:
+    #     - modified_functions: 修改的函数名列表。
+    #     """
+    #     modified_functions = [] # 存储修改的函数名
+    #     files_and_ranges = self.extract_diff_file_and_lines() # 提取 Java 文件及其修改的行号范围
 
-        for file_path, ranges in files_and_ranges.items(): # 遍历文件及其修改的行号范围
-            full_file_path = os.path.join(base_path1, repo, file_path) # 获取文件的完整路径
+    #     for file_path, ranges in files_and_ranges.items(): # 遍历文件及其修改的行号范围
+    #         full_file_path = os.path.join(base_path1, repo, file_path) # 获取文件的完整路径
 
-            for start_line, end_line in ranges: # 遍历修改的行号范围
-                functions_in_range = self.extract_functions_from_file(full_file_path, start_line, end_line) # 提取函数名
-                modified_functions.extend(functions_in_range) # 添加到列表
-        print(modified_functions) # 打印修改的函数名列表
-        return modified_functions # 返回修改的函数名列表
+    #         for start_line, end_line in ranges: # 遍历修改的行号范围
+    #             functions_in_range = self.extract_functions_from_file(full_file_path, start_line, end_line) # 提取函数名
+    #             modified_functions.extend(functions_in_range) # 添加到列表
+    #     print(modified_functions) # 打印修改的函数名列表
+    #     return modified_functions # 返回修改的函数名列表
 
 def get_commit_subject(commit_hash, repo_path):
     """
