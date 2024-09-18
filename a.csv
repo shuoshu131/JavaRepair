@@ -1,6 +1,6 @@
 url,repo,file,java_file,func,hunk,test,note
-https://github.com/FasterXML/jackson-databind/commit/1645efbd392989cf015f459a91c999e59c921b15,jackson-databind,2,1,[],3,0,Fix #2660
-https://github.com/FasterXML/jackson-databind/commit/f6d9c664f6d481703138319f6a0f1fdbddb3a259,jackson-databind,2,1,[],2,0,Fixed #2765
-https://github.com/FasterXML/jackson-databind/commit/592872f4235c7f2a3280725278da55544032f72d,jackson-databind,2,1,[],2,0,Fix #2659
-https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb,jackson-databind,3,2,[],37,1,Fix #3328 (improvement to handling of JDK serialization of JsonNode)
-https://github.com/spring-projects/spring-security/commit/5b293d21161e946bf241d9e974b9af93cfafaaac,spring-security,5,2,[],128,1,Automate spring-security.xsd
+https://github.com/FasterXML/jackson-databind/commit/1645efbd392989cf015f459a91c999e59c921b15,FasterXML/jackson-databind,2,1,0,1,0,Fix #2660
+https://github.com/FasterXML/jackson-databind/commit/f6d9c664f6d481703138319f6a0f1fdbddb3a259,FasterXML/jackson-databind,2,1,0,0,0,Fixed #2765
+https://github.com/FasterXML/jackson-databind/commit/592872f4235c7f2a3280725278da55544032f72d,FasterXML/jackson-databind,2,1,0,0,0,Fix #2659
+https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb,FasterXML/jackson-databind,2,1,0,1,1,Fix #3328 (improvement to handling of JDK serialization of JsonNode)
+https://github.com/spring-projects/spring-security/commit/5b293d21161e946bf241d9e974b9af93cfafaaac,spring-projects/spring-security,4,1,0,0,1,Automate spring-security.xsd

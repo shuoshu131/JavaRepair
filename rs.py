@@ -10,13 +10,13 @@ from concurrent.futures import ThreadPoolExecutor
 access_token = ''
 
 # 本地存放所有仓库的目录
-base_path1 = 'G:\\Repo'
+base_path1 = '/Users/mac/Documents/repo'
 
 # 输入的 CSV 文件路径
-input_csv = "E:\\task\\JavaRepair\\1.csv"
+input_csv = "/Users/mac/Documents/JavaRepair/1.csv"
 
 # 输出的 CSV 文件路径
-output_csv = "E:\\task\\JavaRepair\\a.csv"
+output_csv = "/Users/mac/Documents/JavaRepair/a.csv"
 
 # 定义正则表达式模式
 single_line_comment_pattern = re.compile(r'^[+-]?\s*//')
@@ -79,7 +79,7 @@ def test_finder(url):
     os.chdir(os.path.join(base_path1, repo))
     commit_hash = extract_commit_hash(url)
     git_ls_tree = f'git ls-tree -r {commit_hash}'
-    result = subprocess.run(['cmd', '/c', git_ls_tree], capture_output=True, text=True)
+    result = subprocess.run(['zsh', '/c', git_ls_tree], capture_output=True, text=True)
     return bool(result.stdout)
 
 class DiffParser:
@@ -151,7 +151,7 @@ class DiffParser:
                 is_in_hunk = 0  # 重置 Hunk 标志位
                 is_comment = 0  # 重置注释标志位
                 continue
-            
+            # 结束多行注释
             if line.find('*/') != -1 and is_comment == 1:
                 is_comment = 0  # 注释结束
                 if is_in_hunk == 1:
@@ -190,18 +190,16 @@ class DiffParser:
 
                     #从此往后就是以+或者-开头的修改行
                     if bool(empty_or_whitespace_pattern.match(line[1:])) or single_line_comment_pattern.match(line):
-                        if is_in_hunk == 1:
-                            pointer = index
+                        pointer = index
                         continue
 
 
                     #处理多行注释
                     if multi_line_comment_start_pattern.match(line):
                         is_comment = 1
-                        if is_in_hunk == 1:
-                            pointer = index
+                        pointer = index
                         continue
-
+                    is_in_hunk = 1
 
 
                     if pointer == -1:
@@ -213,10 +211,10 @@ class DiffParser:
                         elif not is_first_func:
                             function = None
                             # 倒查diff至找到函数,返回值为函数名
-
+                            function = self.extract_functions(index)
                             if default_functions is None and function is None:
                                 # 认为找不到hunk对应的函数，跳过
-                                a=1 #占位
+                                continue
                             elif default_functions is not None and function is None:
                                 # 未找到函数，使用默认函数名
                                 functions.append(default_functions)
@@ -435,7 +433,7 @@ if __name__ == '__main__':
             note = get_commit_subject(commit_hash, repo)
             os.chdir(os.path.join(base_path1, repo))
             diff_command = f'git diff {commit_hash}^..{commit_hash}'  # 注意添加了空格
-            diff_output = subprocess.run(['pwsh', '-Command', diff_command], capture_output=True, text=True, encoding='utf-8').stdout
+            diff_output = subprocess.run(['zsh', '-Command', diff_command], capture_output=True, text=True, encoding='utf-8').stdout
             print(diff_command)
             if len(diff_output) < 1:
                 print("the repo local is bad")
