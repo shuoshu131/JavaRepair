@@ -13,10 +13,10 @@ access_token = ''
 base_path1 = 'G:\\Repo'
 
 # 输入的 CSV 文件路径
-input_csv = "E:\\task\\fw\\1.csv"
+input_csv = "E:\\task\\JavaRepair\\1.csv"
 
 # 输出的 CSV 文件路径
-output_csv = "E:\\task\\fw\\a.csv"
+output_csv = "E:\\task\\JavaRepair\\a.csv"
 
 # 定义正则表达式模式
 single_line_comment_pattern = re.compile(r'^[+-]?\s*//')
@@ -143,6 +143,7 @@ class DiffParser:
                 if match:
                     function_name = f"{match.group(1)}({match.group(2)})"
                     default_functions = function_name
+                    print("default_functions:", default_functions)
                     is_first_func = 1
                 else:
                     default_functions = None
@@ -249,6 +250,7 @@ class DiffParser:
         # if is_in_hunk == 1:
         #     hunk += 1
         print(hunk)
+        print(functions)
         return hunk, functions
 
 
@@ -440,7 +442,7 @@ if __name__ == '__main__':
                 diff_url = url + '.diff'
                 res = requests.get(diff_url).text
                 if res is not None:
-                    print("it is solved")
+                    # print("it is solved")
                     diff_output = res
             parser = DiffParser(diff_output)
             with open(output_csv, 'a') as f:
@@ -454,7 +456,7 @@ if __name__ == '__main__':
                     if test_finder(url):
                         test_in_repo = 1
 
-                string = "{},{},{},{},{},{},{},{}\n".format(url, repository_name, file, java_file, functions, hunk, test_in_commit | test_in_repo, note)
+                string = "{},{},{},{},{},{},{},{}\n".format(url, repository_name, file, java_file, len(functions), hunk, test_in_commit | test_in_repo, note)
                 f.write(string)
                 print(string)
         except Exception as e:
