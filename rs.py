@@ -10,13 +10,13 @@ from concurrent.futures import ThreadPoolExecutor
 access_token = ''
 
 # 本地存放所有仓库的目录
-base_path1 = '/Users/mac/Documents/repo'
+base_path1 = 'G:\\Repo'
 
 # 输入的 CSV 文件路径
-input_csv = "/Users/mac/Documents/JavaRepair/1.csv"
+input_csv = "E:\\task\\JavaRepair\\1.csv"
 
 # 输出的 CSV 文件路径
-output_csv = "/Users/mac/Documents/JavaRepair/a.csv"
+output_csv = "E:\\task\\JavaRepair\\a.csv"
 
 # 定义正则表达式模式
 single_line_comment_pattern = re.compile(r'^[+-]?\s*//')
@@ -79,7 +79,7 @@ def test_finder(url):
     os.chdir(os.path.join(base_path1, repo))
     commit_hash = extract_commit_hash(url)
     git_ls_tree = f'git ls-tree -r {commit_hash}'
-    result = subprocess.run(['zsh', '/c', git_ls_tree], capture_output=True, text=True)
+    result = subprocess.run(['pwsh', '/c', git_ls_tree], capture_output=True, text=True)
     return bool(result.stdout)
 
 class DiffParser:
@@ -93,6 +93,7 @@ class DiffParser:
         self.lines = diff_output.splitlines(keepends=False)
         self.diff_output = diff_output
         
+
     def extract_functions(self, index):
         """
         向上查找直到找到 @@ 行，提取附近的函数定义。
@@ -103,21 +104,29 @@ class DiffParser:
         返回:
         - 找到的函数名或 None。
         """
-        func_pattern = re.compile(r'^\s*(?:public|private|protected|static|final|synchronized|abstract|native)?'
-                                  r'\s*(?:static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
+        function_name = None
+        # 匹配 @@ 行
+        atat = re.compile(r'@@.*?@@')
 
-        # 从当前行向上查找，直到找到 @@ 行
-        for i in range(index, 0, -1):
-            line = self.lines[i].strip()
-            if line.startswith('@@'):
-                print(f"Found @@ line: {line}")
-                break  # 找到 @@ 行时，停止查找
-            match = func_pattern.match(line)
-            if match:
-                function_name = f"{match.group(1)}({match.group(2)})"
-                return function_name
+        # 匹配函数定义行的正则表达式
+        function_pattern = re.compile(r'\b(?:public|private|protected|static|final|synchronized|abstract|native)?\s*(\w+(\[\])?)\s+(\w+)\s*\(.*?\)\s*\{')
+        is_find_func = False  # 是否找到函数
 
-        return None
+        # 向上查找，直到找到函数定义或 @@ 行
+        for j in range(index - 1, -1, -1):
+            prev_line = self.lines[j]
+            match_atat = atat.search(prev_line)
+            function_match = function_pattern.search(prev_line)
+            # 寻找函数定义
+            if function_match:
+                is_find_func = True
+                function_name = function_match.group(3).strip()
+                break  # 找到函数定义则停止查找
+
+            # 到 @@ 行但仍然未找到函数定义，结束程序，返回 None
+            if match_atat and not is_find_func:
+                return None
+        return function_name
     
     def parse_hunk(self):
         """
@@ -126,7 +135,7 @@ class DiffParser:
         返回:
         - hunk: Hunk 的数量。 function: 函数名集合。
         """
-        pointer = -1  # 指针，用于记录行索引
+        # pointer = -1  # 指针，用于记录行索引
         hunk = 0  # Hunk 的数量
         is_in_hunk = 0  # 标志位，表示是否在 Hunk 中
         is_comment = 0  # 标志位，表示是否在注释中
@@ -134,9 +143,7 @@ class DiffParser:
         is_java_file = 1 # 标志位，表示是否为 Java 文件
         is_count=0
         functions = []  # 函数名集合
-        func_pattern = re.compile(r'^\s*(?:public|private|protected|static|final|synchronized|abstract|native)?'
-                                  r'\s*(?:static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
-
+       
         for index, line in enumerate(self.lines, start=1):
 
 
@@ -166,30 +173,32 @@ class DiffParser:
 
             # print(line)
             if line.startswith('@@'):
-                match = re.search(func_pattern, line)
+                function_general = re.compile(r'@@.*?@@\s*(.+)\s*\(')
+                match = re.search(function_general, line)
                 if match:
-                    function_name = f"{match.group(1)}({match.group(2)})"#这个括号可能不需要
-                    default_functions = function_name
-                    #print("default_functions:", default_functions)
-                    is_first_func = 1#这个标志位是干什么的
+                    default_functions = match.group(1).strip()  # 获取函数名
+                    print("默认函数:", default_functions)
+                    is_first_func = 1  # 标记为首次函数
                 else:
                     default_functions = None
                     is_first_func = 1
                 is_in_hunk = 0  # 重置 Hunk 标志位
                 is_comment = 0  # 重置注释标志位
-                is_count=0 #重置计数标志位
+                is_count = 0  # 重置计数标志位
                 continue
 
             # 结束多行注释
             if line.find('*/') != -1 and is_comment == 1:
                 is_comment = 0  # 注释结束
                 if is_in_hunk == 1:
-                    pointer = index
+                    # pointer = index
+                    a = 1# 什么都不做
                 continue
 
             if is_comment == 1:
                 if is_in_hunk == 1:
-                    pointer = index
+                    # pointer = index
+                    a = 1# 什么都不做
                 continue
 
             if any(line.startswith(ignore) for ignore in ["+++", "---"]):
@@ -228,13 +237,12 @@ class DiffParser:
                 pointer = index
                 if not is_count:
                     hunk += 1
-                    print(line)
+                    # print(line)
                 is_count=1
-                if default_functions is not None and is_first_func:
+                if is_first_func:
                     functions.append(default_functions)
                     is_first_func = 0
                 elif not is_first_func:
-                    function = None
                     # 倒查diff至找到函数,返回值为函数名
                     function = self.extract_functions(index)
                     if default_functions is None and function is None:
@@ -269,8 +277,8 @@ class DiffParser:
 
         # if is_in_hunk == 1:
         #     hunk += 1
-        #print(hunk)
-       # print(functions)
+        print("块:",hunk)
+        print("函数:",functions)
         return hunk, functions
 
 
@@ -455,10 +463,10 @@ if __name__ == '__main__':
             note = get_commit_subject(commit_hash, repo)
             os.chdir(os.path.join(base_path1, repo))
             diff_command = f'git diff {commit_hash}^..{commit_hash}'  # 注意添加了空格
-            diff_output = subprocess.run(['zsh', '-Command', diff_command], capture_output=True, text=True, encoding='utf-8').stdout
-            print(diff_command)
+            diff_output = subprocess.run(['pwsh', '-Command', diff_command], capture_output=True, text=True, encoding='utf-8').stdout
+            # print(diff_command)
             if len(diff_output) < 1:
-                print("the repo local is bad")
+                # print("the repo local is bad")
                 diff_url = url + '.diff'
                 res = requests.get(diff_url).text
                 if res is not None:
