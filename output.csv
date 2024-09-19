@@ -1,0 +1,73 @@
+CVE_ID,Project,Affected_Version,Link
+CVE-2023-36820,Micronaut Security,2.3.1-3.1.1,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.2.0-3.2.3,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.3.0-3.3.1,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.4.0-3.4.2,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.5.0-3.5.2,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.6.0-3.6.5,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.7.0-3.7.3,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.8.0-3.8.3,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.9.0 -3.9.5,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.10.0-3.10.1,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-36820,Micronaut Security,3.11.0-3.11.0,https://github.com/micronaut-projects/micronaut-security/commit/9728b925221a0d87798ccf250657a3c214b7e980
+CVE-2023-25753,shenyu-admin,2.5.1-2.5.1,https://github.com/apache/shenyu/commit/1fd33d5aa032e8e71e7e40b229d74e9f88745923
+CVE-2023-4218,Java Annotation Processing Core,3.4.100-3.8.0,https://github.com/eclipse-jdt/eclipse.jdt.core/commit/38dd2a878f45cdb3d8d52090f1d6d1b532fd4c4d
+CVE-2023-4218,Eclipse Forms,3.7.0-3.12.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2023-4218,EMF ModelTooling UI,4.7.100-4.8.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2023-2422,Keycloak REST Services,4.3.0.Final-21.1.1,https://github.com/keycloak/keycloak/commit/5c6c55945a384bfd82e51283096204dcb6f63d91
+CVE-2022-4137,Keycloak REST Services,1.9.0.CR1-20.0.4,https://github.com/keycloak/keycloak/commit/30d0e9d22dae51392e5a3748a1c68c116667359a
+CVE-2021-20202,Keycloak REST Services,12.0.0-12.0.4,https://github.com/keycloak/keycloak/commit/853a6d73276849877819f2dc23133557f6e1e601
+CVE-2022-3510,Protocol Buffers [Core],3.21.0-rc-1-3.21.6,https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9
+CVE-2022-3510,Protocol Buffers [Core],3.20.0-rc-1-3.20.2,https://github.com/protocolbuffers/protobuf/commit/24b65038cfe36191268fda355aca0e43d3ecbcbe
+CVE-2022-3510,Protocol Buffers [Core],3.17.0-rc-1-3.19.5,https://github.com/protocolbuffers/protobuf/commit/b0e8e607dc1ace17c823276d3384eeda775bbd76
+CVE-2022-3510,Protocol Buffers [Core],2.6.0-3.16.1,https://github.com/protocolbuffers/protobuf/commit/42e47e5a3fa7219b136f6a5de7c74a89a79245c6
+CVE-2022-3509,Protocol Buffers [Core],3.21.0-rc-1-3.21.6,https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9
+CVE-2022-3509,Protocol Buffers [Core],3.20.0-rc-1-3.20.2,https://github.com/protocolbuffers/protobuf/commit/ae6d69dba64334d77dfb633a146c479982620c1c
+CVE-2022-3509,Protocol Buffers [Core],3.17.0-rc-1-3.19.5,https://github.com/protocolbuffers/protobuf/commit/b0e8e607dc1ace17c823276d3384eeda775bbd76
+CVE-2022-3509,Protocol Buffers [Core],2.6.0-3.16.1,https://github.com/protocolbuffers/protobuf/commit/42e47e5a3fa7219b136f6a5de7c74a89a79245c6
+CVE-2023-46227,Apache InLong - Manager Pojo,1.4.0-1.8.0,https://github.com/apache/inlong/commit/49cbf96ba228b99590cab733011462139b2fea69
+CVE-2023-3432,PlantUML,1.2021.15-1.2023.8,https://github.com/plantuml/plantuml/commit/b32500bb61ae617bb312496d6d832e4be8190797
+CVE-2023-3432,PlantUML,1.2023.7-1.2023.8,https://github.com/plantuml/plantuml/commit/b32500bb61ae617bb312496d6d832e4be8190797
+CVE-2023-3431,PlantUML,1.2023.7-1.2023.8,https://github.com/plantuml/plantuml/commit/fbe7fa3b25b4c887d83927cffb1009ec6cb8ab1e
+CVE-2023-3431,PlantUML,1.2020.0-1.2023.8,https://github.com/plantuml/plantuml/commit/fbe7fa3b25b4c887d83927cffb1009ec6cb8ab1e
+CVE-2023-20861,Spring Expression Language (SpEL),6.0.0-6.0.6,https://github.com/spring-projects/spring-framework/commit/8010de8b63057af06984df5c7550ba99d006e909
+CVE-2023-20861,Spring Expression Language (SpEL),5.3.0-5.3.25,https://github.com/spring-projects/spring-framework/commit/26e0343c1638d59a28a7991bfcaed32dbc4996e4
+CVE-2023-20861,Spring Expression Language (SpEL),5.2.0.RELEASE-5.2.22.RELEASE,https://github.com/spring-projects/spring-framework/commit/b9b31afcc905cd9d5e63739ff5920d849f7f20f0
+CVE-2023-20861,Spring Expression Language (SpEL),3.0.0.M3-5.0.1.RELEASE,https://github.com/spring-projects/spring-framework/commit/b9b31afcc905cd9d5e63739ff5920d849f7f20f0
+CVE-2022-31194,DSpace JSP-UI,1.5-alpha-5.10,https://github.com/DSpace/DSpace/commit/d1dd7d23329ef055069759df15cfa200c8e3
+CVE-2022-31194,DSpace JSP-UI,6.0-rc1-6.3,https://github.com/DSpace/DSpace/commit/7569c6374aefeafb996e202cf8d631020eda5f24
+CVE-2019-0224,Apache JSPWiki Main War,2.11.0.M1-2.11.0.M2,https://github.com/apache/jspwiki/commit/b17f699a4a099639beebb905cf4e04a8bea63b3c
+CVE-2019-0224,Apache JSPWiki Main War,2.10.3-2.10.5,https://github.com/apache/jspwiki/commit/b17f699a4a099639beebb905cf4e04a8bea63b3c
+CVE-2021-29506,GraphHopper Navigation,2.0-pre2-2.3,https://github.com/graphhopper/graphhopper/commit/3bef7ead91d01adfd4fbea459bcc62de1f0279fc
+CVE-2021-29506,GraphHopper Navigation,3.0-pre1-3.0-pre5,https://github.com/graphhopper/graphhopper/commit/3bef7ead91d01adfd4fbea459bcc62de1f0279fc
+CVE-2022-25914,Jib Core,0.1.0-0.21.0,https://github.com/GoogleContainerTools/jib/commit/67fa40bc2c484da0546333914ea07a89fe44eaaf
+CVE-2023-46120,RabbitMQ Java Client,1.3.0-5.17.1,https://github.com/rabbitmq/rabbitmq-java-client/commit/714aae602dcae6cb4b53cadf009323ebac313cc8
+CVE-2023-4218,SWT Tools,3.105.2-3.110.0,https://github.com/eclipse-platform/eclipse.platform.swt/commit/bf71db5ddcb967c0863dad4745367b54f49e06ba
+CVE-2023-4218,Eclipse IDE UI,3.12.2-3.21.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2018-12418,Java UnRar,0.7-1.0.0,https://github.com/junrar/junrar/commit/ad8d0ba8e155630da8a1215cee3f253e0af45817
+CVE-2022-3510,Protocol Buffers [Lite],3.21.0-rc-1-3.21.6,https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9
+CVE-2022-3510,Protocol Buffers [Lite],3.20.0-rc-1-3.20.2,https://github.com/protocolbuffers/protobuf/commit/24b65038cfe36191268fda355aca0e43d3ecbcbe
+CVE-2022-3510,Protocol Buffers [Lite],3.17.0-rc-1-3.19.5,https://github.com/protocolbuffers/protobuf/commit/b0e8e607dc1ace17c823276d3384eeda775bbd76
+CVE-2022-3510,Protocol Buffers [Lite],3.8.0-rc-1-3.16.1,https://github.com/protocolbuffers/protobuf/commit/42e47e5a3fa7219b136f6a5de7c74a89a79245c6
+CVE-2022-3509,Protocol Buffers [Lite],3.8.0-rc-1-3.21.6,https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9
+CVE-2023-20860,Spring Web MVC,6.0.0-M1-6.0.6,https://github.com/spring-projects/spring-framework/commit/202fa5cdb3a3d0cfe6967e85fa167d978244f28a
+CVE-2023-20860,Spring Web MVC,5.3.0-M1-5.3.25,https://github.com/spring-projects/spring-framework/commit/eafe3afe11c9fc440ce3088e7e45ecaeffb57a52
+CVE-2023-20873,spring-boot-actuator-autoconfigure,3.0.0-M1-3.0.5,https://github.com/spring-projects/spring-boot/commit/3522714c13b47af03bf42e7f2d5994af568cb1a7
+CVE-2023-20873,spring-boot-actuator-autoconfigure,2.0.0.M4-2.7.10,https://github.com/spring-projects/spring-boot/commit/3522714c13b47af03bf42e7f2d5994af568cb1a7
+CVE-2019-0224,Apache JSPWiki,2.11.0.M1-2.11.0.M2,https://github.com/apache/jspwiki/commit/b17f699a4a099639beebb905cf4e04a8bea63b3c
+CVE-2019-0224,Apache JSPWiki,2.10.3-2.10.5,https://github.com/apache/jspwiki/commit/b17f699a4a099639beebb905cf4e04a8bea63b3c
+CVE-2023-43642,snappy-java,1.0.1-rc1-1.1.10.3,https://github.com/xerial/snappy-java/commit/9f8c3cf74223ed0a8a834134be9c917b9f10ceb5
+CVE-2023-4218,JFace,3.12.1-3.30.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2023-4218,Eclipse Workbench,3.108.2-3.129.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2016-15026,dd-plist,1.0-1.16,https://github.com/3breadt/dd-plist/commit/2120e77a988d28fba214714710a43521b4ac62b8
+CVE-2018-1002201,ZT Zip,1.4-1.12,https://github.com/zeroturnaround/zt-zip/commit/759b72f33bc8f4d69f84f09fcb7f010ad45d6fff
+CVE-2021-23900,json-sanitizer,1.0-1.2.1,https://github.com/OWASP/json-sanitizer/commit/f2c9858c02cf521dd05f2c6f8f9450f2e1343090
+CVE-2022-23596,Java Unrar,0.7-7.4.0,https://github.com/junrar/junrar/commit/7b16b3d90b91445fd6af0adfed22c07413d4fab7
+CVE-2018-8088,SLF4J Extensions Module,1.8.0-alpha0-1.8.0-beta1,https://github.com/qos-ch/slf4j/commit/d2b27fba88e983f921558da27fc29b5f5d269405
+CVE-2018-8088,SLF4J Extensions Module,1.5.7-1.7.25,https://github.com/qos-ch/slf4j/commit/918a055bdf87867f69693cf82727fa435c489e25
+CVE-2023-46502,opencrx-client,4.3-alpha-1-5.2.2,https://github.com/opencrx/opencrx/commit/ce7a71db0bb34ecbcb0e822d40598e410a48b399
+CVE-2023-25753,shenyu-common,2.5.1-2.5.1,https://github.com/apache/shenyu/commit/1fd33d5aa032e8e71e7e40b229d74e9f88745923
+CVE-2023-4218,Java Development Tools Core,3.3.1.v_780_R33x-3.34.0,https://github.com/eclipse-jdt/eclipse.jdt.core/commit/38dd2a878f45cdb3d8d52090f1d6d1b532fd4c4d
+CVE-2023-4218,Text,3.7.0-3.13.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2023-4218,Eclipse URI Scheme Handling,1.0.0-1.3.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2023-45669,webauthn4j-spring-security-core,0.7.0.RELEASE-0.9.0.RELEASE,https://github.com/webauthn4j/webauthn4j-spring-security/commit/129700d74d83f9b9a82bf88ebc63707e3cb0a725#diff-8b498aa0a0a11f93f0e681d9fc2c2a7840186d290e62004ae5e3a2eb0bc5a98dL23

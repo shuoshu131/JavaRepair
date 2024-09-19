@@ -1,0 +1,218 @@
+CVE-2020-36179,jackson-databind,2.0.0-RC1-2.9.10.7,https://github.com/FasterXML/jackson-databind/commit/3ded28aece694d0df39c9f0fa1ff385b14a8656b
+CVE-2020-36189,jackson-databind,2.0.0-RC1-2.9.10.7,https://github.com/FasterXML/jackson-databind/commit/33d96c13fe18a2dad01b19ce195548c9acea9da4
+CVE-2020-10673,jackson-databind,2.8.11-2.8.11.6,https://github.com/FasterXML/jackson-databind/commit/1645efbd392989cf015f459a91c999e59c921b15
+CVE-2020-10673,jackson-databind,2.0.0-RC1-2.7.9.6,https://github.com/FasterXML/jackson-databind/commit/1645efbd392989cf015f459a91c999e59c921b15
+CVE-2020-10673,jackson-databind,2.9.10-2.9.10.3,https://github.com/FasterXML/jackson-databind/commit/1645efbd392989cf015f459a91c999e59c921b15
+CVE-2020-10673,jackson-databind,2.9.0.pr1-2.9.9.3,https://github.com/FasterXML/jackson-databind/commit/1645efbd392989cf015f459a91c999e59c921b15
+CVE-2020-10673,jackson-databind,2.8.0.rc1-2.8.10,https://github.com/FasterXML/jackson-databind/commit/1645efbd392989cf015f459a91c999e59c921b15
+CVE-2020-14195,jackson-databind,2.0.0-RC1-2.7.9.7,https://github.com/FasterXML/jackson-databind/commit/f6d9c664f6d481703138319f6a0f1fdbddb3a259
+CVE-2020-14195,jackson-databind,2.8.0.rc1-2.8.11.6,https://github.com/FasterXML/jackson-databind/commit/f6d9c664f6d481703138319f6a0f1fdbddb3a259
+CVE-2020-14195,jackson-databind,2.9.0.pr1-2.9.10.4,https://github.com/FasterXML/jackson-databind/commit/f6d9c664f6d481703138319f6a0f1fdbddb3a259
+CVE-2020-10672,jackson-databind,2.0.0-RC1-2.9.10.3,https://github.com/FasterXML/jackson-databind/commit/592872f4235c7f2a3280725278da55544032f72d
+CVE-2020-10672,jackson-databind,2.6.7.4-2.6.7.5,https://github.com/FasterXML/jackson-databind/commit/592872f4235c7f2a3280725278da55544032f72d
+CVE-2021-46877,jackson-databind,2.13.0-rc1-2.13.0,https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb
+CVE-2021-46877,jackson-databind,2.10.0.pr1-2.12.5,https://github.com/FasterXML/jackson-databind/commit/3ccde7d938fea547e598fdefe9a82cff37fed5cb
+CVE-2022-21449,Nimbus JOSE+JWT,2.7-9.21.1,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/651580526d8e815420e06abe31c0b4976c4afec9
+CVE-2019-17195,Nimbus JOSE+JWT,2.9-7.8,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/e17f6412531d5fb267e3f9b4f8a6b4999dd80fc9
+CVE-2017-12972,Nimbus JOSE+JWT,4.0-rc1-4.14,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/0d2bd649ea386539220d4facfe1f65eb1dadb86c
+CVE-2017-12972,Nimbus JOSE+JWT,4.16-4.16,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/0d2bd649ea386539220d4facfe1f65eb1dadb86c
+CVE-2017-12972,Nimbus JOSE+JWT,4.16.2-4.38,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/0d2bd649ea386539220d4facfe1f65eb1dadb86c
+CVE-2017-12973,Nimbus JOSE+JWT,4.16.2-4.38,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/6a29f10f723f406eb25555f55842c59a43a38912
+CVE-2017-12973,Nimbus JOSE+JWT,4.16,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/6a29f10f723f406eb25555f55842c59a43a38912
+CVE-2017-12973,Nimbus JOSE+JWT,2.23-4.14,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/6a29f10f723f406eb25555f55842c59a43a38912
+CVE-2017-12973,Nimbus JOSE+JWT,2.15.0-2.22.1,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/6a29f10f723f406eb25555f55842c59a43a38912
+CVE-2017-12974,Nimbus JOSE+JWT,2.9-2.11.0,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/f3a7a801f0c6b078899fed9226368eb7b44e2b2f
+CVE-2017-12974,Nimbus JOSE+JWT,4.35-4.35,https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/f3a7a801f0c6b078899fed9226368eb7b44e2b2f
+CVE-2023-34034,spring-security-config,6.1.0-M1-6.1.1,https://github.com/spring-projects/spring-security/commit/7813a9ba26e53fe54e4d2ec6eb076126e8550780
+CVE-2023-34034,spring-security-config,6.0.0-M1-6.0.4,https://github.com/spring-projects/spring-security/commit/7813a9ba26e53fe54e4d2ec6eb076126e8550780
+CVE-2023-34034,spring-security-config,5.8.0-M1-5.8.4,https://github.com/spring-projects/spring-security/commit/7813a9ba26e53fe54e4d2ec6eb076126e8550780
+CVE-2023-34034,spring-security-config,5.7.0-M1-5.7.9,https://github.com/spring-projects/spring-security/commit/7813a9ba26e53fe54e4d2ec6eb076126e8550780
+CVE-2023-34034,spring-security-config,5.0.0.M1-5.6.11,https://github.com/spring-projects/spring-security/commit/7813a9ba26e53fe54e4d2ec6eb076126e8550780
+CVE-2023-34042,spring-security-config,5.7.9-5.7.10,https://github.com/spring-projects/spring-security/commit/5b293d21161e946bf241d9e974b9af93cfafaaac
+CVE-2023-34042,spring-security-config,5.8.4-5.8.6,https://github.com/spring-projects/spring-security/commit/5b293d21161e946bf241d9e974b9af93cfafaaac
+CVE-2023-34042,spring-security-config,6.0.4-6.0.6,https://github.com/spring-projects/spring-security/commit/5b293d21161e946bf241d9e974b9af93cfafaaac
+CVE-2023-34042,spring-security-config,6.1.1-6.1.3,https://github.com/spring-projects/spring-security/commit/5b293d21161e946bf241d9e974b9af93cfafaaac
+CVE-2017-12633,Camel :: Hessian (deprecated),2.19.0-2.19.3,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2017-12633,Camel :: Hessian (deprecated),2.20.0-2.20.0,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2017-12633,Camel :: Hessian (deprecated),2.17.0-2.17.7,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2017-12633,Camel :: Hessian (deprecated),2.18.0-2.18.5,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2017-12633,Camel :: Hessian (deprecated),2.19.0-2.19.3,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2017-12633,Camel :: Hessian (deprecated),2.20.0-2.20.0,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2017-12633,Camel :: Hessian (deprecated),2.17.0-2.17.7,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2017-12633,Camel :: Hessian (deprecated),2.18.0-2.18.5,https://github.com/apache/camel/compare/05ec7972007d468526e8c8b258a36ecf04316119...2de79b4d0020f8a69affb35cf0458f7db983574b
+CVE-2024-22257,spring-security-core,5.8.0-M1-5.8.10,https://github.com/spring-projects/spring-security/commit/5a7f12f1a9fdb4edaab6f61495f1d781a7273b61
+CVE-2024-22257,spring-security-core,2.0-M1-5.7.11,https://github.com/spring-projects/spring-security/commit/5a7f12f1a9fdb4edaab6f61495f1d781a7273b61
+CVE-2024-22257,spring-security-core,6.2.0-M1-6.2.2,https://github.com/spring-projects/spring-security/commit/5a7f12f1a9fdb4edaab6f61495f1d781a7273b61
+CVE-2024-22257,spring-security-core,6.1.0-M1-6.1.7,https://github.com/spring-projects/spring-security/commit/5a7f12f1a9fdb4edaab6f61495f1d781a7273b61
+CVE-2024-22234,spring-security-core,6.1.0-M1-6.1.6,https://github.com/spring-projects/spring-security/commit/750cb30ce44d279c2f54c845d375e6a58bded569
+CVE-2024-22234,spring-security-core,6.2.0-6.2.1,https://github.com/spring-projects/spring-security/commit/750cb30ce44d279c2f54c845d375e6a58bded569
+CVE-2010-3700,spring-security-core,2.0.0-2.0.5.RELEASE,https://github.com/spring-projects/spring-security/commit/8f6ddb0f171eb6011a44879a557c7932be857eb2
+CVE-2023-32261,Jenkins Dimensions Plugin,0.8.17-0.9.3,https://github.com/jenkinsci/dimensionsscm-plugin/commit/2b6e23e5fb88e00a36512ea1dfca37e7f8387cd6
+CVE-2023-32262,Jenkins Dimensions Plugin,0.8.17-0.9.3,https://github.com/jenkinsci/dimensionsscm-plugin/commit/2b6e23e5fb88e00a36512ea1dfca37e7f8387cd6
+CVE-2023-32262,Jenkins Dimensions Plugin,0.8.15-0.8.16,https://github.com/jenkinsci/dimensionsscm-plugin/commit/2b6e23e5fb88e00a36512ea1dfca37e7f8387cd6
+CVE-2023-32262,Jenkins Dimensions Plugin,0.7.11-0.8.14,https://github.com/jenkinsci/dimensionsscm-plugin/commit/2b6e23e5fb88e00a36512ea1dfca37e7f8387cd6
+CVE-2023-32263,Jenkins Dimensions Plugin,0.8.17-0.9.3,https://github.com/jenkinsci/dimensionsscm-plugin/commit/2b6e23e5fb88e00a36512ea1dfca37e7f8387cd6
+CVE-2023-32263,Jenkins Dimensions Plugin,0.8.15-0.8.16,https://github.com/jenkinsci/dimensionsscm-plugin/commit/2b6e23e5fb88e00a36512ea1dfca37e7f8387cd6
+CVE-2023-32263,Jenkins Dimensions Plugin,0.7.11-0.8.14,https://github.com/jenkinsci/dimensionsscm-plugin/commit/2b6e23e5fb88e00a36512ea1dfca37e7f8387cd6
+CVE-2021-22112,spring-security-web,5.4.0-M1-5.4.3,https://github.com/spring-projects/spring-security/commit/c72a6fac04853912a4b7caad5f0500f2aace5a79
+CVE-2021-22112,spring-security-web,5.3.0.M1-5.3.7.RELEASE,https://github.com/spring-projects/spring-security/compare/996ccc08a47a1bba30e7595fe27ca6dcfc1ea5b5...419839d05c2cf42e13890818c57a729c53724f47#diff-0d9ef5adea64a07b6c04608ab43df3cf0364067bf8196ae0cc5979569cba329e
+CVE-2021-22112,spring-security-web,5.2.0.M1-5.2.8.RELEASE,https://github.com/spring-projects/spring-security/compare/f60daa51529c8330219528ec2ea99446da0bbc78...e2121532a2f86a379c3cd6f6e4bf7bd014311a9d
+CVE-2021-22112,spring-security-web,5.0.0.M1-5.1.13.RELEASE,https://github.com/spring-projects/spring-security/compare/f60daa51529c8330219528ec2ea99446da0bbc78...e2121532a2f86a379c3cd6f6e4bf7bd014311a9d
+CVE-2021-22112,spring-security-web,3.1.0.M1-3.2.10.RELEASE,https://github.com/spring-projects/spring-security/compare/f60daa51529c8330219528ec2ea99446da0bbc78...e2121532a2f86a379c3cd6f6e4bf7bd014311a9d
+CVE-2010-3700,spring-security-web,3.0.0.RELEASE-3.0.3.RELEASE,https://github.com/spring-projects/spring-security/commit/ed9411c6608b044ee40dcc25ba71f87e73282740
+CVE-2022-30126,Apache Tika core,2.0.0-ALPHA-2.3.0,https://github.com/apache/tika/commit/83b0de4d60161ebd4bc224141a959ac8c18d95f4
+CVE-2022-30126,Apache Tika core,1.17-1.28.1,https://github.com/apache/tika/commit/83b0de4d60161ebd4bc224141a959ac8c18d95f4
+CVE-2022-30973,Apache Tika core,2.0.0-ALPHA-2.3.0,https://github.com/apache/tika/commit/83b0de4d60161ebd4bc224141a959ac8c18d95f4
+CVE-2022-30973,Apache Tika core,1.17-1.28.2,https://github.com/apache/tika/commit/a36711610fa1f6f5ba0f594803415af795e0b265
+CVE-2022-33879,Apache Tika core,2.0.0-ALPHA-2.4.0,https://github.com/apache/tika/commit/3f0078639e9b15de7f5f8293df9222fdc1505fe0
+CVE-2022-33879,Apache Tika core,1.17-1.28.3,https://github.com/apache/tika/commit/22f763a3f14f9a47e46212a74b2a5d4339de6ab5
+CVE-2023-41329,WireMock,3.0.0-beta-11-3.0.2,https://github.com/wiremock/wiremock/commit/027ddafc38a1048d6bd64d896b07ee35b0268894
+CVE-2023-41329,WireMock,3.0.0-beta-11-3.0.2,https://github.com/wiremock/wiremock/commit/027ddafc38a1048d6bd64d896b07ee35b0268894
+CVE-2023-41329,WireMock,2.21.0-2.35.0,https://github.com/wiremock/wiremock/commit/027ddafc38a1048d6bd64d896b07ee35b0268894
+CVE-2023-41329,WireMock,3.0.0-3.0.1,https://github.com/wiremock/wiremock/commit/027ddafc38a1048d6bd64d896b07ee35b0268894
+CVE-2023-41329,WireMock,2.21.0-2.35.0,https://github.com/wiremock/wiremock/commit/027ddafc38a1048d6bd64d896b07ee35b0268894
+CVE-2024-23672,tomcat-websocket,11.0.0-M1-11.0.0-M16,https://github.com/apache/tomcat/commit/b0e3b1bd78de270d53e319d7cb79eb282aa53cb9
+CVE-2024-23672,tomcat-websocket,10.0.0-M1-10.1.18,https://github.com/apache/tomcat/commit/0052b374684b613b0c849899b325ebe334ac6501
+CVE-2024-23672,tomcat-websocket,9.0.0.M1-9.0.85,https://github.com/apache/tomcat/commit/52d6650e062d880704898d7d8c1b2b7a3efe8068
+CVE-2024-23672,tomcat-websocket,8.5.0-8.5.98,https://github.com/apache/tomcat/commit/3631adb1342d8bbd8598802a12b63ad02c37d591
+CVE-2024-22369,Camel :: SQL,4.1.0-4.3.0,https://github.com/apache/camel/commit/c23df082b024df2126953d65675d8f4df7895395
+CVE-2024-22369,Camel :: SQL,3.22.0-3.22.0,https://github.com/apache/camel/commit/f71ee8f384523c75daa89934209d8cee04e9fca3
+CVE-2024-22369,Camel :: SQL,4.0.0-M1-4.0.3,https://github.com/apache/camel/commit/7c90d516ef238be22369bfbf1500a2742ccc02e2
+CVE-2024-22369,Camel :: SQL,2.6.0-3.21.3,https://github.com/apache/camel/commit/9fb66ee02463bf26909bd90ffa41e5fd36a72085
+CVE-2016-0709,Jetspeed-2 Administration,2.3.0-2.3.0,http://svn.apache.org/viewvc?view=revision&sortby=date&revision=1724717
+CVE-2016-0709,Jetspeed-2 Administration,2.2.0-2.2.2,http://svn.apache.org/viewvc?view=revision&sortby=date&revision=1724717
+CVE-2016-0711,Jetspeed-2 Administration,2.2.0-2.2.2,http://svn.apache.org/viewvc?view=revision&sortby=date&revision=1724143
+CVE-2016-0711,Jetspeed-2 Administration,2.3.0-2.3.0,http://svn.apache.org/viewvc?view=revision&sortby=date&revision=1724143
+CVE-2018-15758,OAuth2 for Spring Security,2.3.0.RELEASE-2.3.3.RELEASE,https://github.com/spring-projects/spring-security-oauth/commit/4082ec7ae3d39198a47b5c803ccb20dacefb0b09
+CVE-2018-15758,OAuth2 for Spring Security,2.2.0.RELEASE-2.2.2.RELEASE,https://github.com/spring-projects/spring-security-oauth/commit/f92223afc71687bd3156298054903f50aa71fbf9
+CVE-2018-15758,OAuth2 for Spring Security,2.1.0.RELEASE-2.1.2.RELEASE,https://github.com/spring-projects/spring-security-oauth/commit/ddd65cd9417ae1e4a69e4193a622300db38e2ef1
+CVE-2018-15758,OAuth2 for Spring Security,2.0.0.M2-2.0.16.RELEASE,https://github.com/spring-projects/spring-security-oauth/commit/ddd65cd9417ae1e4a69e4193a622300db38e2ef1
+CVE-2014-3577,Apache CXF Runtime HTTP Transport,2.7.0-2.7.13,https://github.com/apache/cxf/commit/e227a1a9ee536a33c550683405a766bf5e906873
+CVE-2014-3577,Apache CXF Runtime HTTP Transport,3.0.0-milestone1-3.0.2,https://github.com/apache/cxf/commit/68cd67b1187edfca957f15a00eab9a14cd140672
+CVE-2016-6812,Apache CXF Runtime HTTP Transport,3.1.0-3.1.8,https://github.com/apache/cxf/compare/ae102f9...1f824d8039c7a42a4aa46f844e6c800e1143c7e7
+CVE-2016-6812,Apache CXF Runtime HTTP Transport,3.0.0-milestone1-3.0.11,https://github.com/apache/cxf/compare/51a2368...a30397b0c7c4b7fc83e9a4bae71df342c194b60f
+CVE-2020-13444,com.liferay.dynamic.data.mapping.service,1.0.0-2.7.4,https://github.com/community-security-team/liferay-portal/commit/064e6b01afa1e087e4c6bbaf7f71c97ee33f3ee9
+CVE-2020-13444,com.liferay.dynamic.data.mapping.service,3.0.0-3.0.93,https://github.com/community-security-team/liferay-portal/commit/064e6b01afa1e087e4c6bbaf7f71c97ee33f3ee9
+CVE-2020-13444,com.liferay.dynamic.data.mapping.service,4.0.0-4.0.66,https://github.com/community-security-team/liferay-portal/commit/064e6b01afa1e087e4c6bbaf7f71c97ee33f3ee9
+CVE-2020-13444,com.liferay.dynamic.data.mapping.service,5.0.1-5.0.18,https://github.com/community-security-team/liferay-portal/commit/064e6b01afa1e087e4c6bbaf7f71c97ee33f3ee9
+CVE-2024-28752,Apache CXF Runtime Aegis Databinding,4.0.0-4.0.3,https://github.com/apache/cxf/commit/d0baeb3ee64c6d7c883bd2f5c4cb0de6b0b5f463
+CVE-2024-28752,Apache CXF Runtime Aegis Databinding,2.0.6-3.5.7,https://github.com/apache/cxf/commit/659a8f9b10bc8037774c0399e61e77e3955fd230
+CVE-2024-28752,Apache CXF Runtime Aegis Databinding,3.6.0-3.6.2,https://github.com/apache/cxf/commit/f973751b67f79ea2b53fabb2f1762214b7d07131
+CVE-2022-43401,Script Security Plugin,1.58-1183.v774b_0b_0a_a_451,https://github.com/jenkinsci/script-security-plugin/commit/85d16bd851b355458f6396dbc4f92c3e0eebcd72
+CVE-2022-43403,Script Security Plugin,1.8-1172.v35f6a_0b_8207e,https://github.com/jenkinsci/script-security-plugin/commit/85d16bd851b355458f6396dbc4f92c3e0eebcd72
+CVE-2022-43404,Script Security Plugin,1.18-1172.v35f6a_0b_8207e,https://github.com/jenkinsci/script-security-plugin/commit/85d16bd851b355458f6396dbc4f92c3e0eebcd72
+CVE-2023-2974,Quarkus - Vert.x - HTTP - Runtime,2.7.5.Final-2.16.7.Final,https://github.com/cescoffier/quarkus/commit/d5fc95429199629b189b61a78f3d8da76f75ed86
+CVE-2023-2974,Quarkus - Vert.x - HTTP - Runtime,1.6.0.CR1-2.7.4.Final,https://github.com/cescoffier/quarkus/commit/d5fc95429199629b189b61a78f3d8da76f75ed86
+CVE-2023-2974,Quarkus - Vert.x - HTTP - Runtime,0.23.0-1.5.2.Final,https://github.com/cescoffier/quarkus/commit/d5fc95429199629b189b61a78f3d8da76f75ed86
+CVE-2023-34054,HTTP functionality for the Reactor Netty library,1.0.0-M2-1.0.38,https://github.com/reactor/reactor-netty/commit/37dc8a2ef6514cd7834e75e7f3faf0b9ea044c88
+CVE-2023-34054,HTTP functionality for the Reactor Netty library,1.1.0-M1-1.1.12,https://github.com/reactor/reactor-netty/commit/37dc8a2ef6514cd7834e75e7f3faf0b9ea044c88
+CVE-2022-31684,HTTP functionality for the Reactor Netty library,1.0.11-1.0.23,https://github.com/reactor/reactor-netty/commit/9662c6fb643180c1b4bd93e2d300c2d1928ffdf2
+CVE-2023-44483,Apache XML Security for Java,2.2.0-2.2.5,https://github.com/apache/santuario-xml-security-java/commit/cd923d63ba2a02578b263258e749f3ed94389fd8
+CVE-2023-44483,Apache XML Security for Java,2.3.0-2.3.3,https://github.com/apache/santuario-xml-security-java/commit/c85db6be7f49815253f59902b066086a7ad5ce9a
+CVE-2023-44483,Apache XML Security for Java,3.0.0-3.0.2,https://github.com/apache/santuario-xml-security-java/commit/18999b9dced2c736f4a8d52d0c7d1b114351c77d
+CVE-2023-31442,akka-actor,2.6.17-2.8.1-M1,https://github.com/akka/akka/commit/ef33e71ac9ce0b5041adcbb57d210c7d029712b6
+CVE-2023-31442,akka-actor,2.5.23-2.8.1-M1,https://github.com/akka/akka/commit/ef33e71ac9ce0b5041adcbb57d210c7d029712b6
+CVE-2023-31442,akka-actor,2.5.14-2.8.1-M1,https://github.com/akka/akka/commit/ef33e71ac9ce0b5041adcbb57d210c7d029712b6
+CVE-2017-12626,Apache POI,3.14-3.17-beta1,https://github.com/apache/poi/compare/a0b324224b9f756a6c2b9c61e0c66a7dd96f9ea7...a07ed9e86474da98f204efadfd5b9327009a0d21
+CVE-2014-3574,Apache POI,0.1-3.10.0,https://github.com/apache/poi/commit/bb7a24769a97732e760a0d70e76466424bfc4d8e
+CVE-2014-3529,Apache POI,3.5-beta4-3.10-FINAL,https://github.com/apache/poi/commit/103b45073c7b504236588b3acc146530205af53c
+CVE-2019-3799,spring-cloud-config-server,1.1.0.RELEASE-1.4.5.RELEASE,https://github.com/spring-cloud/spring-cloud-config/commit/d3e21866a5f192fa2582349cb3732ad0e4b8850b
+CVE-2019-3799,spring-cloud-config-server,2.1.0.RELEASE-2.1.1.RELEASE,https://github.com/spring-cloud/spring-cloud-config/commit/9617f2922ee2ae27f08676716224933f0d869719
+CVE-2019-3799,spring-cloud-config-server,2.0.0.RELEASE-2.0.3.RELEASE,https://github.com/spring-cloud/spring-cloud-config/commit/90e8a81f6fa921e034cecb79cd100f343f7714af
+CVE-2023-49109,dolphinscheduler,3.0.0-alpha-3.2.0,https://github.com/apache/dolphinscheduler/commit/8c01fcf14b199e2c1ba86c17351e1ea30614f484
+CVE-2023-49299,dolphinscheduler,1.3.8-3.1.8,https://github.com/apache/dolphinscheduler/commit/d1ef54f6a851e64525f1078887520394e553b6e8
+CVE-2023-49250,dolphinscheduler-common,1.2.0-3.2.0,https://github.com/apache/dolphinscheduler/commit/a0bc778bafc29d2d65bc9ed66db0fa51e6860809
+CVE-2023-49620,dolphinscheduler-common,1.2.0-3.0.6,https://github.com/apache/dolphinscheduler/commit/a4948f58e671ab263060da1de255af3ecd2530ac
+CVE-2022-41678,ActiveMQ :: Assembly,4.1.1-5.16.5,https://github.com/apache/activemq/commit/6120169e563b55323352431dfe9ac67a8b4de6c2
+CVE-2022-41678,ActiveMQ :: Assembly,5.17.0-5.17.3,https://github.com/apache/activemq/commit/6120169e563b55323352431dfe9ac67a8b4de6c2
+CVE-2023-48222,Rundeck library Rundeck,4.12.0-rc1-20230406-4.17.2-20231107,https://github.com/rundeck/rundeck/commit/03c4833c05a79a8e73d296980ffbd778e614e8f3
+CVE-2023-47112,Rundeck library Rundeck,4.12.0-rc1-20230406-4.17.2-20231107,https://github.com/rundeck/rundeck/commit/03c4833c05a79a8e73d296980ffbd778e614e8f3
+CVE-2023-51518,Apache James :: Server,3.8.0-3.8.0,https://github.com/apache/james-project/commit/3f02586be84c0394bbe90900f0957354ea41e02c
+CVE-2023-51518,Apache James :: Server,3.0-beta2-3.7.4,https://github.com/apache/james-project/commit/59bf9b9cdfaabbeb1de6971ce0bbbe230c9f8b36
+CVE-2023-49898,StreamPark Project Parent POM,2.0.0-2.1.0,https://github.com/apache/incubator-streampark/commit/b1132fe1368c49ea0fce2a46d1dfc58031ace089	
+CVE-2023-30867,StreamPark Project Parent POM,2.0.0-2.1.0,https://github.com/apache/incubator-streampark/commit/5d381d8a357cb439022dec10f570f54aca2b208d
+CVE-2023-24621,YamlBeans,1.06-1.15,https://github.com/EsotericSoftware/yamlbeans/commit/b1122588e7610ae4e0d516c50d08c94ee87946e6
+CVE-2023-24620,YamlBeans,1.06-1.15,https://github.com/EsotericSoftware/yamlbeans/commit/b1122588e7610ae4e0d516c50d08c94ee87946e6
+CVE-2023-49620,dolphinscheduler-dao,1.2.0-3.0.6,https://github.com/apache/dolphinscheduler/commit/a4948f58e671ab263060da1de255af3ecd2530ac
+CVE-2020-11974,dolphinscheduler-dao,1.3.0-1.3.0,https://github.com/apache/incubator-dolphinscheduler/commit/86f4276f0fd8d3d42ce9bcc13463eb015232b56f
+CVE-2018-8088,SLF4J Extensions Module,1.8.0-alpha0-1.8.0-beta1,https://github.com/qos-ch/slf4j/commit/d2b27fba88e983f921558da27fc29b5f5d269405
+CVE-2018-8088,SLF4J Extensions Module,1.5.7-1.7.25,https://github.com/qos-ch/slf4j/commit/918a055bdf87867f69693cf82727fa435c489e25
+CVE-2018-1297,Apache JMeter Core,2.6-3.3,https://github.com/apache/jmeter/compare/f65fce9ba1834a3b3aff67d654015e516912f5a8...172adcc2648abaa6349a737a74b5f13cb7927ac8
+CVE-2018-1287,Apache JMeter Core,2.6-3.3,https://github.com/apache/jmeter/commit/8a0154759224243fb72dd41a4a65ad0f5612a739
+CVE-2023-6393,Quarkus - Cache - Runtime,1.3.0.Alpha2-3.2.8.Final,https://github.com/quarkusio/quarkus/commit/f781b7fd106fd2d90656ac78d21f8e01374f0b68
+CVE-2023-6393,Quarkus - Cache - Runtime,3.3.0.CR1-3.5.1,https://github.com/quarkusio/quarkus/commit/f781b7fd106fd2d90656ac78d21f8e01374f0b68
+CVE-2023-4043,Eclipse Parsson,1.1.0-1.1.3,https://github.com/eclipse-ee4j/parsson/commit/9dd5ad5f871f7b93654073a3f8ce3e1d9b8d9b31
+CVE-2023-4043,Eclipse Parsson,1.0.0-1.0.4,https://github.com/eclipse-ee4j/parsson/commit/ece765cf33fd6afb00f99f85dc9029c54eaa6623
+CVE-2023-36478,Jetty :: HTTP3 :: QPACK,11.0.8-11.0.15,https://github.com/jetty/jetty.project/commit/ebec7d2ea3427298a8922210177f84c0fab58bd6
+CVE-2023-36478,Jetty :: HTTP3 :: QPACK,10.0.8-10.0.15,https://github.com/jetty/jetty.project/commit/ebec7d2ea3427298a8922210177f84c0fab58bd6
+CVE-2014-3577,Apache HttpClient,4.0-alpha1-4.3.4,https://github.com/apache/httpclient/commit/51cc67567765d67f878f0dcef61b5ded454d3122
+CVE-2020-13956,Apache HttpClient,4.1-4.5.12,https://github.com/apache/httpcomponents-client/commit/e628b4c5c464c2fa346385596cc78e035a91a62e
+CVE-2021-42697,akka-http-core,10.0.0-RC2-10.2.6,https://github.com/akka/akka-http/commit/6fd3c0dc2d9dc979bdc99395f39ec42e733011e4
+CVE-2021-42697,akka-http-core,10.1.8-10.2.6,https://github.com/akka/akka-http/commit/6fd3c0dc2d9dc979bdc99395f39ec42e733011e4
+CVE-2017-5635,nifi-framework-authorization,1.1.0-1.1.1,https://github.com/apache/nifi/commit/bd88e4335ad151592f1310996e9a0513b7f0829a
+CVE-2017-5635,nifi-framework-authorization,1.1.0-1.1.1,https://github.com/apache/nifi/commit/bd88e4335ad151592f1310996e9a0513b7f0829a
+CVE-2020-27178,cas-server-support-otp-mfa-core,6.1.0-RC1-6.1.7.1,https://github.com/apereo/cas/commit/eef5027b24111f0bf8169e096958f7bbb3bfafc0
+CVE-2020-27178,cas-server-support-otp-mfa-core,6.2.0-RC1-6.2.3,https://github.com/apereo/cas/commit/7ee8be94ae346f26cf1105b80a9bf4d15d717d8f
+CVE-2022-31679,Spring Data REST - WebMVC,3.7.0-M1-3.7.2,https://github.com/spring-projects/spring-data-rest/commit/2ad081f75b4baabfbc139f0dc2b75c54889b4053
+CVE-2022-31679,Spring Data REST - WebMVC,2.5.0.RC1-3.6.6,https://github.com/spring-projects/spring-data-rest/commit/bf37590b25a0c066f67547b39fb4d7294e2c7cb7
+CVE-2005-3745,struts,1.2.2-1.2.7,https://github.com/apache/struts1/commit/d75d351da0f85b8930fd47fd3c23f5351cddbcf3
+CVE-2005-3745,struts,1.1-rc1-1.1,https://github.com/apache/struts1/commit/d75d351da0f85b8930fd47fd3c23f5351cddbcf3
+CVE-2021-23408,GraphHopper Dropwizard Bundle,4.0-pre1-4.0-pre1,https://github.com/graphhopper/graphhopper/commit/6e98cf8119314c9f28134c492b12eb878ef7754c
+CVE-2021-23408,GraphHopper Dropwizard Bundle,client_hc_no_vehicle-3.0,https://github.com/graphhopper/graphhopper/commit/784470f3315717abe4920435f24e9d08dae63267
+CVE-2020-15839,com.liferay.portal.vulcan.impl,1.0.0-2.0.50,https://github.com/liferay/liferay-portal/commit/5382b19bf7998f1c68c35bfea73b16932e7a86d1
+CVE-2020-15839,com.liferay.portal.vulcan.impl,3.0.0-3.0.66,https://github.com/liferay/liferay-portal/commit/5382b19bf7998f1c68c35bfea73b16932e7a86d1
+CVE-2020-1954,Apache CXF Runtime Management,2.1-3.2.12,https://github.com/apache/cxf/commit/8636c3760a97979f42e45080230a27b81df5d436
+CVE-2020-1954,Apache CXF Runtime Management,3.3.0-3.3.5,https://github.com/apache/cxf/commit/98ec361acd390483005de12ca3b10cf49cbdcf8a
+CVE-2023-50380,ambari contrib wfmanager,2.7.3.2.19-2.7.3.2.19,https://github.com/apache/ambari/commit/d9652e4611ea36208d5f748028b3a9cd980e6edb
+CVE-2024-23899,Jenkins Git server Plugin,1.0-99.va_0826a_b_cdfa_d,https://github.com/jenkinsci/git-server-plugin/commit/068ac7cc2574882ef9f5a486e001228a71d881ad
+CVE-2024-22201,Core :: HTTP3 :: Common,12.0.0.alpha0-12.0.5,https://github.com/jetty/jetty.project/commit/0839a208cdc3fcfe25206a77af59ba9fda260188
+CVE-2023-50740,linkis-application-manager,1.3.1-1.4.0,https://github.com/apache/linkis/commit/08cbcfca140afebae10e1582ee87721578719ded
+CVE-2024-28152,Bitbucket Branch Source Plugin,723.vbabdf19eb4c7-866.vdea_7dcd3008e,https://github.com/jenkinsci/bitbucket-branch-source-plugin/commit/28d74e8b4226bfc7524b412e34f7090784cc1a08
+CVE-2023-46502,opencrx-client,4.3-alpha-1-5.2.2,https://github.com/opencrx/opencrx/commit/ce7a71db0bb34ecbcb0e822d40598e410a48b399
+CVE-2023-4759,JGit - Core,0.5.1.51-g96b2e76-6.6.0.202305301015-r,https://git.eclipse.org/c/jgit/jgit.git/commit/?id=9072103f3b3cf64dd12ad2949836ab98f62dabf1
+CVE-2024-24569,java-security-toolkit,1.0.1-1.1.1,https://github.com/pixee/java-security-toolkit/commit/b885b03c9cfae53d62d239037f9654d973dd54d9
+CVE-2024-25125,digdag-server,0.9.42-0.10.5,https://github.com/treasure-data/digdag/commit/13ebfa1e33fbbad3953da2d918b0d485dc28fd85
+CVE-2020-13936,Apache Velocity - Engine,2.0-2.2,https://github.com/apache/velocity-engine/commit/f355cec739d4e705e541a149ff2d8806ed565401
+CVE-2023-40339,Config File Provider Plugin,2.16.0-952.va_544a_6234b_46,https://github.com/jenkinsci/config-file-provider-plugin/commit/0432a802e4d2e4eedfe88f7eb8593f85d1bd69d3#diff-0bf8220c5f2a9e06a1797f19fb4336615daa1a4163cc4e2efea8783961b079c4
+CVE-2023-38889,Alluxio Core - Common Utilities,1.0.0-303,https://github.com/LetianYuan/alluxio/commit/4b5ec253002dae6b47ea3008c09f0378c116754d
+CVE-2023-25753,shenyu-common,2.5.1-2.5.1,https://github.com/apache/shenyu/commit/1fd33d5aa032e8e71e7e40b229d74e9f88745923
+CVE-2023-51075,hutool-core,5.7.14-5.8.23,https://github.com/dromara/hutool/commit/32f2d0bd55defecb869fbf64d940bcc05642accc
+CVE-2015-7516,onos-core-net,1.0.0-1.4.0,https://gerrit.onosproject.org/#/c/6137/
+CVE-2020-17510,Apache Shiro :: Support :: Spring Boot Web,1.4.0-RC2-1.6.0,https://github.com/apache/shiro/commit/6acaaee9bb3a27927b599c37fabaeb7dd6109403
+CVE-2015-3208,HornetQ Selector Implementation,2.5.0.Beta1-2.5.0.Beta1,https://github.com/apache/activemq-artemis/commit/48d9951d879e0c8cbb59d4b64ab59d53ef88310d
+CVE-2021-46361,Apache FreeMarker,2.3.24-atlassian-2-2.3.31-atlassian-2,https://github.com/apache/freemarker/commit/617ad6fc005fefc0a0e4cd211c903a6b5a84e5bb
+CVE-2023-6911,WSO2 Carbon - Registry - Indexing UI,4.3.0-4.7.36,https://github.com/wso2/carbon-registry/commit/878fc7e53c90acc85e303d2af73440014a68b246
+CVE-2022-43766,IoTDB Server,0.13.0-0.13.2,https://github.com/apache/iotdb/commit/89c0ec3b963cb44cf94a1efac8f28a5fc475d214
+CVE-2018-1000014,Hudson Translation Assitance plugin,1.0-1.5,https://github.com/jenkinsci/translation-plugin/commit/1287c8ead6adc891210b8b9fbc33f07adebf720d
+CVE-2023-25621,Apache Sling I18N Support,2.0.2-2.5.18,https://github.com/apache/sling-org-apache-sling-i18n/commit/c07049d9124dfa73e7a249c7466699941c2afb3e
+CVE-2016-8737,Brooklyn Common Utilities,0.7.0-incubating-0.9.0,https://github.com/apache/brooklyn-server/compare/9b24f7d92ecec2b814c78307b7971a585986bff4...45686e4c837478f682d6aec3792c4371b9d0e7cf
+CVE-2023-22849,Apache Sling - CMS Integration Tests,1.0.2-1.1.4,https://github.com/apache/sling-org-apache-sling-app-cms/commit/540be07c6fd0af01c8ddb6fca39b06d8e9a60e5c
+CVE-2023-4218,Java Development Tools Core,3.3.1.v_780_R33x-3.34.0,https://github.com/eclipse-jdt/eclipse.jdt.core/commit/38dd2a878f45cdb3d8d52090f1d6d1b532fd4c4d
+CVE-2023-4218,Text,3.7.0-3.13.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2023-4218,Eclipse URI Scheme Handling,1.0.0-1.3.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2016-2171,Jetspeed-2 Security Components,2.3.0,http://svn.apache.org/viewvc?view=revision&sortby=date&revision=1726886
+CVE-2017-10400,Admin Console Common,3.1.2-4.1.2,https://github.com/payara/Payara/pull/1407/commits/58a8e057937d11e9454d47032648445f5f3ad3bf
+CVE-2023-38905,jeecg-boot-base-core,3.0-3.0,https://github.com/jeecgboot/jeecg-boot/commit/ca1218f792369ed3c8196e796b1940b33ed6469b
+CVE-2023-40340,NodeJS Plugin,1.0-1.6.0.1,https://github.com/jenkinsci/nodejs-plugin/commit/a2198feb53765f0b1f063b1827e90473a60a25a0
+CVE-2023-45669,webauthn4j-spring-security-core,0.7.0.RELEASE-0.9.0.RELEASE,https://github.com/webauthn4j/webauthn4j-spring-security/commit/129700d74d83f9b9a82bf88ebc63707e3cb0a725#diff-8b498aa0a0a11f93f0e681d9fc2c2a7840186d290e62004ae5e3a2eb0bc5a98dL23
+CVE-2019-0214,Archiva Web :: Web Common,1.4-M3-2.2.3,https://github.com/apache/archiva/compare/52b971c59333153f4fbeb779a4c1373316f579c4...cc0d8ad0b525e641855319812877fdc6c8cd327c
+CVE-2017-10391,Glassfish MBeanServer support,3.1.2-4.1.2,https://github.com/payara/Payara/commit/1cc2f12678a414286b7f0cc28a2abf32a0c3b6ea
+CVE-2018-16153,Opencast :: common,9.0-10.5,https://github.com/opencast/opencast/commit/776d5588f39c61eb04c03bb955416c4f77629d51
+CVE-2020-11994,Camel :: RobotFramework,3.0.0-RC2-3.2.0,https://github.com/apache/camel/commit/e9eb2fdea3cd298c7176fd003b6e9b114ae74dbf
+CVE-2014-3623,Apache WSS4J,1.5.2-1.6.16,https://github.com/apache/wss4j/commit/9c6333a0801923c0b8d8f41bee91e6cb02ed2ab1
+CVE-2021-33813,JDOM,2.0.3-2.0.6,https://github.com/hunterhacker/jdom/pull/188/commits/bd3ab78370098491911d7fe9d7a43b97144a234e
+CVE-2020-11971,Camel :: API,3.0.0-M1-3.1.0,https://github.com/apache/camel/commit/36b55f9cfa50a2056c70f98d66c29a95ddc724e1
+CVE-2018-18893,jinjava,2.1.2-2.4.5,https://github.com/HubSpot/jinjava/commit/c13927db0fb7bb3b567469f125be8000f8cbf601
+CVE-2020-14326,RESTEasy Core,4.0.0.Beta6-4.5.5.Final,https://github.com/resteasy/resteasy/commit/556fa437f4913848d60a9fdfe2369aceedc71397
+CVE-2015-8031,Hudson :: Core,0.0-3.3.1,https://git.eclipse.org/c/hudson/org.eclipse.hudson.core.git/commit/?id=6362c295e80a651dcb6c7e8647984d52a974786b
+CVE-2021-37714,jsoup Java HTML Parser,1.6.2-1.14.1,https://github.com/jhy/jsoup/commit/d2c455c94a3aaaca29d8cec6bd53ee9824622b51
+CVE-2020-13951,Openmeetings,5.0.0-M1-6.2.0-RC3,https://github.com/apache/openmeetings/commit/cbdfd2f9731a8fe3daa9b4adf5da4a063fde161d
+CVE-2015-3250,Apache Directory LDAP API Client All,0.0-1.0.0-M30,https://svn.apache.org/viewvc/directory/shared/trunk/ldap/model/src/main/java/org/apache/directory/api/ldap/model/password/PasswordUtil.java?r1=1688300&r2=1688299&pathrev=1688300&view=patch
+CVE-2022-27772,spring-boot,2.0.0.M1-2.2.10.RELEASE,https://github.com/spring-projects/spring-boot/commit/667ccdae84822072f9ea1a27ed5c77964c71002d
+CVE-2019-10753,spotless-eclipse-cdt,9.4.3,https://github.com/diffplug/spotless/commit/b2e61c3197a90becd1375b45549e910ac869aa29
+CVE-2011-2087,Struts 2 Java Templates Plugin,2.0-2.2.2,https://github.com/apache/struts/commit/1736b56db702c6639a6d5ae1146dba5a262e3344
+CVE-2012-1006,Struts 2 Rest Showcase Webapp,0-2.2.3,https://github.com/apache/struts/commit/77ce77d342da02eac9e8f6232da3bcf6dafbc3f0
+CVE-2017-9802,Apache Sling Servlets POST,2.0.2-incubator-2.3.20,https://github.com/apache/sling/commit/7dc32d7bb2c44319b2d94b76b454dea9fd438071
+CVE-2017-7677,ranger,0.6.0-0.7.0,https://github.com/apache/ranger/compare/dffbad4af43018438faf00b156acf593ab47839c...2e193e124399cf685c17798b8243e1d62f223315
+CVE-2020-11009,Rundeck library rundeck,3.0.0-alpha1-3.2.5-20200403,https://github.com/rundeck/rundeck/compare/a7eaab3cfee9d5b2cf28a89d5e46a9c408e216ea...db31eeea0e7f434249f0b13ceaf75bddbf29e212
+CVE-2018-1313,Apache Derby Network Server,10.3.1.4-10.14.1.0,https://github.com/apache/derby/commit/a2027c64e185a9ce46929f352e2db03371c1f95b

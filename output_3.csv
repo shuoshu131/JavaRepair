@@ -1,0 +1,234 @@
+CVE-2024-24549,tomcat-embed-core,8.5.0-8.5.98,https://github.com/apache/tomcat/commit/0cac540a882220231ba7a82330483cbd5f6b1f96
+CVE-2024-24549,tomcat-embed-core,10.0.0-M1-10.1.18,https://github.com/apache/tomcat/commit/d07c82194edb69d99b438828fe2cbfadbb207843
+CVE-2024-24549,tomcat-embed-core,9.0.0-M1-9.0.85,https://github.com/apache/tomcat/commit/8e03be9f2698f2da9027d40b9e9c0c9429b74dc0
+CVE-2024-24549,tomcat-embed-core,11.0.0-M1-11.0.0-M16,https://github.com/apache/tomcat/commit/810f49d5ff6d64b704af85d5b8d0aab9ec3c83f5
+CVE-2023-46589,tomcat-embed-core,10.1.0-M1-10.1.15,https://github.com/apache/tomcat/commit/b5776d769bffeade865061bc8ecbeb2b56167b08
+CVE-2023-46589,tomcat-embed-core,8.5.0-8.5.95,https://github.com/apache/tomcat/commit/aa92971e879a519384c517febc39fd04c48d4642
+CVE-2023-46589,tomcat-embed-core,9.0.0-M1-9.0.82,https://github.com/apache/tomcat/commit/7a2d8818fcea0b51747a67af9510ce7977245ebd
+CVE-2023-46589,tomcat-embed-core,11.0.0-M1-11.0.0-M10,https://github.com/apache/tomcat/commit/cca12473573cb37d38d95fab48d2fae07fb6d1a4
+CVE-2024-21733,tomcat-embed-core,10.0.0-M1-10.0.2,https://github.com/apache/tomcat/commit/86ccc43940861703c2be96a5f35384407522125a
+CVE-2024-21733,tomcat-embed-core,8.5.7-8.5.63,https://github.com/apache/tomcat/commit/9b44626e136c89a107dd4458ad4bde6123359fd6
+CVE-2024-21733,tomcat-embed-core,9.0.0-M11-9.0.43,https://github.com/apache/tomcat/commit/ce4b154e7b48f66bd98858626347747cd2514311
+CVE-2020-1938,tomcat-embed-core,7.0.0-7.0.99,https://github.com/apache/tomcat/commit/0f725b323a74b64cdb35fce04b54427582ad6063
+CVE-2020-1938,tomcat-embed-core,9.0.0.M1-9.0.30,https://github.com/apache/tomcat/commit/4c933d80e340b4a841a672060351b2190b326782
+CVE-2020-1938,tomcat-embed-core,8.0.0-RC1-8.5.50,https://github.com/apache/tomcat/commit/bd5ebb63e438a253bbd9b035425ece915d3feb21
+CVE-2017-5651,tomcat-embed-core,8.5.0-8.5.12,https://github.com/apache/tomcat85/commit/494429ca210641b6b7affe89a2b0a6c0ff70109b
+CVE-2017-5651,tomcat-embed-core,9.0.0.M1-9.0.0.M18,https://github.com/apache/tomcat/commit/9233d9d6a018be4415d4d7d6cb4fe01176adf1a8
+CVE-2023-42794,tomcat-embed-core,8.5.85-8.5.93,https://github.com/apache/tomcat/commit/30f8063d7a9b4c43ae4722f5e382a76af1d7a6bf
+CVE-2023-42794,tomcat-embed-core,9.0.70-9.0.80,https://github.com/apache/tomcat/commit/44d05d75d696ca10ce251e4e370511e38f20ae75
+CVE-2019-12418,tomcat-embed-core,9.0.16-9.0.26,https://github.com/apache/tomcat/commit/1fc9f58
+CVE-2021-25329,tomcat-embed-core,10.0.0-M1-10.0.0,https://github.com/apache/tomcat/commit/6d66e99ef85da93e4d2c2a536ca51aa3418bfaf4
+CVE-2021-25329,tomcat-embed-core,9.0.0.M1-9.0.41,https://github.com/apache/tomcat/commit/4785433a226a20df6acbea49296e1ce7e23de453
+CVE-2021-25329,tomcat-embed-core,8.5.0-8.5.61,https://github.com/apache/tomcat/commit/93f0cc403a9210d469afc2bd9cf03ab3251c6f35
+CVE-2021-25329,tomcat-embed-core,7.0.0-7.0.107,https://github.com/apache/tomcat/commit/74b105657ffbd1d1de80455f03446c3bbf30d1f5
+CVE-2020-13943,tomcat-embed-core,8.5.0-8.5.57,https://github.com/apache/tomcat/commit/9d7def063b47407a09a2f9202beed99f4dcb292a
+CVE-2020-13943,tomcat-embed-core,9.0.0.M1-9.0.37,https://github.com/apache/tomcat/commit/55911430df13f8c9998fbdee1f9716994d2db59b
+CVE-2020-13943,tomcat-embed-core,10.0.0-M1-10.0.0-M7,https://github.com/apache/tomcat/commit/1bbc650cbc3f08d85a1ec6d803c47ae53a84f3bb
+CVE-2010-3718,tomcat-embed-core,7.0.0-7.0.3,https://github.com/apache/tomcat70/commit/ad2235f5b0673606d060a158d778b8613e31ebec
+CVE-2016-3607,Core Servlet Container,3.2-b01-3.2-b06,https://github.com/payara/Payara/commit/ca683b8a9164bf236273eb3e5086a3e9d9242eff
+CVE-2016-3607,Core Servlet Container,3.0-b49-3.0,https://github.com/payara/Payara/commit/ca683b8a9164bf236273eb3e5086a3e9d9242eff
+CVE-2016-3607,Core Servlet Container,3.1-b01-3.1.1,https://github.com/payara/Payara/commit/ca683b8a9164bf236273eb3e5086a3e9d9242eff
+CVE-2016-3607,Core Servlet Container,3.0.1-b01-3.0.1,https://github.com/payara/Payara/commit/ca683b8a9164bf236273eb3e5086a3e9d9242eff
+CVE-2016-3607,Core Servlet Container,3.1.2-3.1.2.2,https://github.com/payara/Payara/commit/ca683b8a9164bf236273eb3e5086a3e9d9242eff
+CVE-2016-3607,Core Servlet Container,4.0-b33-4.1.2,https://github.com/payara/Payara/commit/ca683b8a9164bf236273eb3e5086a3e9d9242eff
+CVE-2017-10393,Core Servlet Container,3.1-b01-3.1.1,https://github.com/payara/Payara/commit/67ffd436595a998f66a7fc045558b22e2c1cbcb4
+CVE-2017-10393,Core Servlet Container,10.0-b28,https://github.com/payara/Payara/commit/67ffd436595a998f66a7fc045558b22e2c1cbcb4
+CVE-2017-10393,Core Servlet Container,3.0-Prelude-b28b-3.0,https://github.com/payara/Payara/commit/67ffd436595a998f66a7fc045558b22e2c1cbcb4
+CVE-2017-10393,Core Servlet Container,3.0.1-b01-3.0.1,https://github.com/payara/Payara/commit/67ffd436595a998f66a7fc045558b22e2c1cbcb4
+CVE-2017-10393,Core Servlet Container,3.2-b01-3.2-b06,https://github.com/payara/Payara/commit/67ffd436595a998f66a7fc045558b22e2c1cbcb4
+CVE-2023-50386,Apache Solr (module: core),6.0.0-8.11.2.7.1.9.0-387,https://github.com/apache/lucene-solr/commit/6c8f24eb9e3fe1cb19058173f2e221de3febfeda
+CVE-2023-50386,Apache Solr (module: core),9.0.0-9.4.0,https://github.com/apache/solr/commit/c79011e81dada2f9bc4b4df32ffb32152ef81152
+CVE-2023-50291,Apache Solr (module: core),6.0.0-8.11.2.7.1.9.0-387,https://github.com/apache/solr/commit/659021c7d50164a3166887f24875228431b02102
+CVE-2023-50291,Apache Solr (module: core),9.0.0-9.2.1,https://github.com/apache/solr/commit/98c198810f2cd934d23d0d80aadb570a2bbb3b8e
+CVE-2023-50292,Apache Solr (module: core),8.10.0-8.11.2.7.1.9.0-387,https://github.com/apache/lucene-solr/commit/6e9ed203b30958396bdfd41760d426b386646865
+CVE-2023-50292,Apache Solr (module: core),9.0.0-9.2.1,https://github.com/apache/lucene-solr/commit/6e9ed203b30958396bdfd41760d426b386646865
+CVE-2023-50298,Apache Solr (module: core),6.0.0-8.11.2.7.1.9.0-387,https://github.com/apache/solr/commit/e2bf1f434aad873fbb24c21d46ac00e888806d98
+CVE-2019-0192,Apache Solr (module: core),6.0.0-6.6.5,https://issues.apache.org/jira/secure/attachment/12961503/SOLR-13301.patch
+CVE-2023-50290,Apache Solr (module: core),9.0.0-9.2.1,https://github.com/apache/solr/commit/35fc4bdc48171d9a64251c54a1e76deb558cf9d8
+CVE-2013-6408,Apache Solr (module: core),1.3.0-4.3.0,https://github.com/apache/lucene-solr/commit/31050216b692603ced4270d5c2630e7dd37e14e4
+CVE-2015-3188,Storm Core,0.10.0-beta,https://github.com/apache/storm/commit/a37f33115073449985e4c7bce58078d800f34267
+CVE-2018-1331,Storm Core,1.2.0-1.2.1,https://github.com/apache/storm/commit/efad4cca2d7d461f5f8c08a0d7b51fabeb82d0af
+CVE-2018-1331,Storm Core,1.1.0-1.1.2,https://github.com/apache/storm/commit/f61e5daf299d6c37c7ad65744d02556c94a16a4b
+CVE-2018-1331,Storm Core,0.10.0-0.10.2,https://github.com/apache/storm/commit/f61e5daf299d6c37c7ad65744d02556c94a16a4b
+CVE-2018-1331,Storm Core,1.0.0-1.0.6,https://github.com/apache/storm/commit/f61e5daf299d6c37c7ad65744d02556c94a16a4b
+CVE-2023-43123,Storm Core,2.0.0-2.5.0,https://github.com/apache/storm/commit/b778125a17ce7497d80aea1e339f3a282aeeb65a
+CVE-2017-9799,Storm Core,1.0.3-1.0.3,https://github.com/apache/storm/commit/44b80fbfcf8a52b6e7cb3840a52ff07f8a2364e4
+CVE-2017-9799,Storm Core,1.1.0-1.1.0,https://github.com/apache/storm/commit/9980b68d521dfdf5a83577ac361949293751c618
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.2.0-m03-2.2.5,https://github.com/javaserverfaces/mojarra/commit/3d476326c7ff32fe17357ac44a7fe194874df246
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.1.6-2.1.7-02,https://github.com/javaserverfaces/mojarra/commit/8862e9e1fdc5e9a3c67019552f2a2b88e50e68ad
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.1.8-2.1.20-03,https://github.com/javaserverfaces/mojarra/commit/8862e9e1fdc5e9a3c67019552f2a2b88e50e68ad
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.1.0-b01-2.1.5,https://github.com/javaserverfaces/mojarra/commit/8862e9e1fdc5e9a3c67019552f2a2b88e50e68ad
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.1.22-2.1.27,https://github.com/javaserverfaces/mojarra/commit/8862e9e1fdc5e9a3c67019552f2a2b88e50e68ad
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.0.4-b02-2.0.4-b15,https://github.com/javaserverfaces/mojarra/commit/6997c80fc69a239d03d2c85fd173d9e06236e4c1
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.0.5-b01-2.0.9,https://github.com/javaserverfaces/mojarra/commit/e6cf4a73ad4fd341efd78794f888f995a1d4819f
+CVE-2013-5855,Oracle's implementation of the JSF 2.2 specification.,2.0.10-2.0.11,https://github.com/javaserverfaces/mojarra/commit/6fe98a1fc683136d8232f3b083776a02938d1bd4
+CVE-2018-3258,MySQL Connector/J,8.0.11-8.0.12,https://github.com/mysql/mysql-connector-j/commit/8b59b9ebab61cc97bafe77ee05f79829b1376e47
+CVE-2023-21971,MySQL Connector/J,8.0.31-8.0.32,https://github.com/mysql/mysql-connector-j/commit/2b16eedca12bd1d42c4ee48016b75bc77b3705d6
+CVE-2022-21363,MySQL Connector/J,5.1.29-8.0.27,https://github.com/mysql/mysql-connector-j/commit/4993d5735fd84a46e7d949ad1bcaa0e9bb039824
+CVE-2017-3523,MySQL Connector/J,5.1.1-5.1.40,https://github.com/mysql/mysql-connector-j/commit/6189e718de5b6c6115aee45dd7a480081c129d68
+CVE-2017-3586,MySQL Connector/J,5.1.21-5.1.41,https://github.com/mysql/mysql-connector-j/commit/aeba57264966b0fd329cdb8170ba772fd8fd4de2
+CVE-2015-2575,MySQL Connector/J,5.1.26-5.1.34,https://github.com/mysql/mysql-connector-j/commit/b8acfd59baf2223814a48b6fb87ea95919da2b5f
+CVE-2017-3589,MySQL Connector/J,5.1.1-5.1.41,https://github.com/mysql/mysql-connector-j/commit/44631dd316e3da818fb593f02dbbe30308a937e0
+CVE-2024-23944,Apache ZooKeeper - Server,3.8.0-3.8.3,https://github.com/apache/zookeeper/commit/daf7cfd04005cff1a4f7cab5ab13d41db88d0cd8
+CVE-2024-23944,Apache ZooKeeper - Server,3.9.0-3.9.1,https://github.com/apache/zookeeper/commit/daf7cfd04005cff1a4f7cab5ab13d41db88d0cd8
+CVE-2024-23944,Apache ZooKeeper - Server,3.6.0-3.7.2,https://github.com/apache/zookeeper/commit/29c7b9462681f47c2ac12e609341cf9f52abac5c
+CVE-2023-44981,Apache ZooKeeper - Server,3.6.0-3.7.1,https://github.com/apache/zookeeper/commit/d59f8d6c81a679ca93492b5e28b807e7abb4d9d0
+CVE-2023-44981,Apache ZooKeeper - Server,3.8.0-3.8.2,https://github.com/apache/zookeeper/commit/96b3172ca249a8580e9a315d589d319286cee4ee
+CVE-2023-44981,Apache ZooKeeper - Server,3.9.0-3.9.0,https://github.com/apache/zookeeper/commit/703b16feeecd9ac14feac29462eb45f306d220ca
+CVE-2018-1262,UAA server,4.13.0-4.13.3,https://github.com/cloudfoundry/uaa/commit/dccd3962f969913996ee88f653fce3b108c0205b
+CVE-2018-1262,UAA server,4.12.0-4.12.1,https://github.com/cloudfoundry/uaa/commit/14c745aa293b8d3ce9cdd6bfbc6c0ef3f269b211
+CVE-2018-1262,UAA server,3.2.0-4.11.0,https://github.com/cloudfoundry/uaa/commit/14c745aa293b8d3ce9cdd6bfbc6c0ef3f269b211
+CVE-2018-15761,UAA server,3.0.0-4.22.0,https://github.com/cloudfoundry/uaa/compare/46c122d45c9d62261b8e29dcf315740d39b752b9...95b7d9e7fae534a362b98de1df5bf501cd52c481
+CVE-2017-4960,UAA server,3.9.0-3.10.0,https://github.com/cloudfoundry/uaa/commit/78731f8aa37a53385d0194821a5356ab66e21385
+CVE-2019-3787,UAA server,3.0.0-4.30.0,https://github.com/cloudfoundry/uaa/commit/3a7749a6d327cacbc7bf93cd50a0e2dee0b935ba
+CVE-2022-3510,Protocol Buffers [Lite],3.21.0-rc-1-3.21.6,https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9
+CVE-2022-3510,Protocol Buffers [Lite],3.20.0-rc-1-3.20.2,https://github.com/protocolbuffers/protobuf/commit/24b65038cfe36191268fda355aca0e43d3ecbcbe
+CVE-2022-3510,Protocol Buffers [Lite],3.17.0-rc-1-3.19.5,https://github.com/protocolbuffers/protobuf/commit/b0e8e607dc1ace17c823276d3384eeda775bbd76
+CVE-2022-3510,Protocol Buffers [Lite],3.8.0-rc-1-3.16.1,https://github.com/protocolbuffers/protobuf/commit/42e47e5a3fa7219b136f6a5de7c74a89a79245c6
+CVE-2022-3509,Protocol Buffers [Lite],3.8.0-rc-1-3.21.6,https://github.com/protocolbuffers/protobuf/commit/a3888f53317a8018e7a439bac4abeb8f3425d5e9
+CVE-2024-23672,tomcat-embed-websocket,8.5.0-8.5.98,https://github.com/apache/tomcat/commit/3631adb1342d8bbd8598802a12b63ad02c37d591
+CVE-2024-23672,tomcat-embed-websocket,9.0.0.M1-9.0.85,https://github.com/apache/tomcat/commit/52d6650e062d880704898d7d8c1b2b7a3efe8068
+CVE-2024-23672,tomcat-embed-websocket,10.0.0-M1-10.1.18,https://github.com/apache/tomcat/commit/0052b374684b613b0c849899b325ebe334ac6501
+CVE-2024-23672,tomcat-embed-websocket,11.0.0-M1-11.0.0-M16,https://github.com/apache/tomcat/commit/b0e3b1bd78de270d53e319d7cb79eb282aa53cb9
+CVE-2024-23114,Camel :: Cassandra CQL,4.1.0-4.3.0,https://github.com/apache/camel/commit/c7aa49f8c83b0aca3b62984b6ccfe0a3d3bcee4f
+CVE-2024-23114,Camel :: Cassandra CQL,4.0.0-M1-4.0.3,https://github.com/apache/camel/commit/d12927b4884d60392cce59fe16bb0260cc4bcdca
+CVE-2024-23114,Camel :: Cassandra CQL,3.22.0-3.22.0,https://github.com/apache/camel/commit/8a5202a50aed508a2cb6ae2f6ea74184e0bcf62c
+CVE-2024-23114,Camel :: Cassandra CQL,2.15.0-3.21.3,https://github.com/apache/camel/commit/1c0b303f1dd2ada62294b6f7607e16404953ebc7
+CVE-2023-50270,dolphinscheduler-api,1.2.0-3.2.0,https://github.com/apache/dolphinscheduler/commit/12f8138167f8481f66d52775b510457f532b56e4
+CVE-2023-49068,dolphinscheduler-api,2.0.0-3.2.0,https://github.com/apache/dolphinscheduler/commit/359b1a7e5bb72790d2583971dc2d44a8481e3a10
+CVE-2023-48796,dolphinscheduler-api,3.0.0-alpha-3.0.1,https://github.com/apache/dolphinscheduler/commit/f2cec3e2593ae5b54dcd7aa992081b84b4b4663a
+CVE-2023-49620,dolphinscheduler-api,1.2.0-3.0.6,https://github.com/apache/dolphinscheduler/commit/a4948f58e671ab263060da1de255af3ecd2530ac
+CVE-2020-36179,Data Mapper for Jackson,0.9.6-1.9.13,https://github.com/FasterXML/jackson-databind/commit/3ded28aece694d0df39c9f0fa1ff385b14a8656b
+CVE-2020-36179,Data Mapper for Jackson,0.9.6-1.9.13,https://github.com/FasterXML/jackson-databind/commit/3ded28aece694d0df39c9f0fa1ff385b14a8656b
+CVE-2020-36189,Data Mapper for Jackson,0.9.6-1.9.13,https://github.com/FasterXML/jackson-databind/commit/33d96c13fe18a2dad01b19ce195548c9acea9da4
+CVE-2020-36189,Data Mapper for Jackson,0.9.6-1.9.13,https://github.com/FasterXML/jackson-databind/commit/33d96c13fe18a2dad01b19ce195548c9acea9da4
+CVE-2016-5019,Apache MyFaces Trinidad Impl,1.0.1-1.0.13,http://svn.apache.org/viewvc?view=revision&revision=1760820
+CVE-2016-5019,Apache MyFaces Trinidad Impl,2.1.0-2.1.1,http://svn.apache.org/viewvc?view=revision&revision=1760820
+CVE-2016-5019,Apache MyFaces Trinidad Impl,2.0.0-2.0.1,http://svn.apache.org/viewvc?view=revision&revision=1760820
+CVE-2016-5019,Apache MyFaces Trinidad Impl,1.2.1-1.2.14,http://svn.apache.org/viewvc?view=revision&revision=1760820
+CVE-2019-10797,WSO2 Transport HTTP Netty Component,6.0.234-6.2.30,https://github.com/wso2/transport-http/commit/4a4dc99c7b259646ee5e23b7aaa7c3a8bac959c1
+CVE-2019-10797,WSO2 Transport HTTP Netty Component,6.0.65-6.0.79,https://github.com/wso2/transport-http/commit/4a4dc99c7b259646ee5e23b7aaa7c3a8bac959c1
+CVE-2019-10797,WSO2 Transport HTTP Netty Component,6.0.216-6.0.233,https://github.com/wso2/transport-http/commit/4a4dc99c7b259646ee5e23b7aaa7c3a8bac959c1
+CVE-2019-10797,WSO2 Transport HTTP Netty Component,6.0.80-6.0.215,https://github.com/wso2/transport-http/commit/4a4dc99c7b259646ee5e23b7aaa7c3a8bac959c1
+CVE-2024-22201,Jetty :: HTTP2 :: Common,9.3.0.M0-9.4.53.v20231009,https://github.com/jetty/jetty.project/commit/86586df0a8a4d9c6b5af9a621ad1adf1b494d39b
+CVE-2024-22201,Jetty :: HTTP2 :: Common,10.0.0-alpha0-10.0.19,https://github.com/jetty/jetty.project/commit/86586df0a8a4d9c6b5af9a621ad1adf1b494d39b
+CVE-2024-22201,Jetty :: HTTP2 :: Common,11.0.0-alpha0-11.0.19,https://github.com/jetty/jetty.project/commit/86586df0a8a4d9c6b5af9a621ad1adf1b494d39b
+CVE-2023-37544,Pulsar WebSocket,3.0.0-3.0.0,https://github.com/apache/pulsar/commit/894192fb6542e504be43034a3c33e90f9c6e528a
+CVE-2023-37544,Pulsar WebSocket,2.11.0-2.11.1,https://github.com/apache/pulsar/commit/11ee36d0351644a006d2a8639bdcc714fb602358
+CVE-2023-37544,Pulsar WebSocket,v1.19.0-incubating-2.10.4,https://github.com/apache/pulsar/commit/eac263e8f2a93d3b9f707b97c7bbcbc2a826569f
+CVE-2023-20860,Spring Web MVC,6.0.0-M1-6.0.6,https://github.com/spring-projects/spring-framework/commit/202fa5cdb3a3d0cfe6967e85fa167d978244f28a
+CVE-2023-20860,Spring Web MVC,5.3.0-M1-5.3.25,https://github.com/spring-projects/spring-framework/commit/eafe3afe11c9fc440ce3088e7e45ecaeffb57a52
+CVE-2018-15756,Spring Web MVC,4.2.0.RELEASE-4.2.9.RELEASE,https://github.com/spring-projects/spring-framework/commit/c7bd3b844012a9bb214ca7203f110979c0890c00
+CVE-2015-1831,XWork: Core,2.3.20,https://github.com/apache/struts/commit/d832747d647df343ed07a58b1b5e540a05a4d51b
+CVE-2010-1870,XWork: Core,2.1.4-2.1.6,https://github.com/apache/struts/commit/0c367776762b25c567b415ac4c2b0e48042cf34f
+CVE-2017-9787,XWork: Core,2.3.1-2.3.32,https://github.com/apache/struts/commit/583da3d5df5aeeded3beadca6305a98c5618e46b
+CVE-2023-6378,Logback Core Module,1.3.0-alpha0-1.3.11,https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731
+CVE-2023-6378,Logback Core Module,1.4.0-1.4.11,https://github.com/qos-ch/logback/commit/b8eac23a9de9e05fb6d51160b3f46acd91af9731
+CVE-2023-6378,Logback Core Module,0.9.18-1.2.12,https://github.com/qos-ch/logback/commit/bb095154be011267b64e37a1d401546e7cc2b7c3
+CVE-2009-2693,catalina,6.0.13-6.0.20,http://svn.apache.org/viewvc?view=revision&revision=892815
+CVE-2010-3718,catalina,5.5.0-5.5.29,https://github.com/apache/tomcat55/commit/53b9e4bf21aef92321404644bfbb22ae625c033b
+CVE-2010-3718,catalina,6.0.12-6.0.29,https://github.com/apache/tomcat60/commit/770c969ae2c993522dc489966dcdc9aded4656f6
+CVE-2016-6794,tomcat-util-scan,8.0.0.RC1-8.0.36,http://svn.apache.org/viewvc?view=revision&revision=1754727
+CVE-2016-6794,tomcat-util-scan,8.5.0-8.5.4,http://svn.apache.org/viewvc?view=revision&revision=1754726
+CVE-2016-6794,tomcat-util-scan,9.0.0.M1-9.0.0.M9,http://svn.apache.org/viewvc?view=revision&revision=1754445
+CVE-2014-3558,Hibernate Validator Engine - Relocation Artifact,5.0.0.Final-5.1.1.Final,https://github.com/hibernate/hibernate-validator/compare/7221f8d4074d1eea3840b1023990e34b544d5af5...db81024b79d3605d21d1c539ca0ce16fda0526c7
+CVE-2014-3558,Hibernate Validator Engine - Relocation Artifact,4.3.0.Final-4.3.1.Final,https://github.com/hibernate/hibernate-validator/compare/4628c499772a3109b9879330c61802fca5f1c141...ab21ca98fd7814bd014e7d8e03de8640f2529352
+CVE-2014-3558,Hibernate Validator Engine - Relocation Artifact,4.2.0.Beta1-4.2.0.Final,https://github.com/hibernate/hibernate-validator/compare/b4c89ff851c44b17225a0093edae2f33db8860df...f29c4204572d868390819245d45738d08128ab76
+CVE-2020-17521,Apache Groovy,2.0.0-beta-1-2.4.20,https://github.com/apache/groovy/commit/4e418d4a34c973a7ec1e822552103043ac13780e
+CVE-2020-17521,Apache Groovy,2.5.0-alpha-1-2.5.13,https://github.com/apache/groovy/commit/98dc5d713926cd81b006c510a1546ccd520fe17f
+CVE-2020-17521,Apache Groovy,3.0.0-alpha-1-3.0.6,https://github.com/apache/groovy/commit/f069c35c4bbaf68547c76381509d59840a7ed32d
+CVE-2024-22201,Jetty :: HTTP3 :: Common,11.0.8-11.0.19,https://github.com/jetty/jetty.project/commit/0839a208cdc3fcfe25206a77af59ba9fda260188
+CVE-2024-22201,Jetty :: HTTP3 :: Common,10.0.8-10.0.19,https://github.com/jetty/jetty.project/commit/0839a208cdc3fcfe25206a77af59ba9fda260188
+CVE-2023-26031,Apache Hadoop YARN NodeManager,3.3.1-3.3.4,https://github.com/apache/hadoop/commit/10e7ca481c8cd0548d903d39d8581291e533bf12
+CVE-2018-11766,Apache Hadoop YARN NodeManager,2.7.0-2.7.6,https://github.com/apache/hadoop/compare/25052fba49455b2e037c46f0c1b0368d017c6905...e446276a9ad3a7ab31692a12d220af42ee2e0e79
+CVE-2023-29055,Apache Kylin - Core Common,2.0.0-4.0.3,https://github.com/apache/kylin/commit/b60d5ae694dffc2281bfe0ef464eada0b3a9b774
+CVE-2021-45456,Apache Kylin - Core Common,4.0.0-4.0.0,https://github.com/apache/kylin/commit/f4daf14dde99b934c92ce2c832509f24342bc845
+CVE-2024-26308,Apache Commons Compress,1.21-1.25.0,https://github.com/apache/commons-compress/commit/adda4c1829aaae45939e370f47b478ef7f3e7e33
+CVE-2021-35517,Apache Commons Compress,1.3-1.20,https://gitbox.apache.org/repos/asf?p=commons-compress.git;a=commit;h=7ce1b0796d6cbe1f41b969583bd49f33ae0efef0
+CVE-2023-49733,Cocoon Core,2.2.0-M1-2.2.0,https://github.com/apache/cocoon/commit/c9ef017e0bd7af356f21240eec5dba3e3dbbd827
+CVE-2022-45135,Cocoon Core,2.2.0-M1-2.2.0,https://github.com/apache/cocoon/commit/bf7c0057f3fd0e3142e2fa45a8b7c538f74c92a2
+CVE-2023-43666,Apache InLong - Manager Web,1.4.0-1.8.0,https://github.com/apache/inlong/commit/6b50691690f315cb2b57255be9207621831b385a
+CVE-2023-43667,Apache InLong - Manager Web,1.2.0-incubating-1.8.0,https://github.com/apache/inlong/commit/9d44b257c3fcc7c14614e4b078d3d2d5b865c316
+CVE-2017-5662,batik-dom,1.6.1-1.8,https://github.com/apache/batik/compare/e2200fd50e424f6e132ec86ba65bb0b0805ca4d3...6ab669f073c23a443d78a7a08aea2fd4de10da8c
+CVE-2015-0250,batik-dom,1.7,https://github.com/apache/batik/commit/1e12686194370b22420da705d71af66161affa33
+CVE-2016-2141,JGroups,3.2.9.Final-3.2.13.Final,https://github.com/belaban/JGroups/commit/eeaf5241cce464ef21a2dfc4938729ade9ebef36
+CVE-2016-2141,JGroups,3.3.0.CR1-3.6.9.Final,https://github.com/belaban/JGroups/commit/fba182c14075789e1d2c976d50d9018c671ad0b4
+CVE-2010-2076,Apache CXF Common Utilities,2.1-2.1.9,https://github.com/apache/cxf/commit/fec9e63fda69a3ef21679cd811efa2a0c100ce95
+CVE-2010-2076,Apache CXF Common Utilities,2.2-2.2.8,https://github.com/apache/cxf/commit/63a0a674a46aa24bf020bcb3d9e71bc0ad130c64
+CVE-2023-20873,spring-boot-actuator-autoconfigure,3.0.0-M1-3.0.5,https://github.com/spring-projects/spring-boot/commit/3522714c13b47af03bf42e7f2d5994af568cb1a7
+CVE-2023-20873,spring-boot-actuator-autoconfigure,2.0.0.M4-2.7.10,https://github.com/spring-projects/spring-boot/commit/3522714c13b47af03bf42e7f2d5994af568cb1a7
+CVE-2015-2912,OrientDB Core,1.0rc9-2.0.14,https://github.com/orientechnologies/orientdb/commit/5dbd6035e4e59259f3e08ba8f1218785f36d1d2d
+CVE-2015-2912,OrientDB Core,2.1-rc1-2.1.0,https://github.com/orientechnologies/orientdb/commit/f11dbced94cb587f445cb99db08735c023921053
+CVE-2022-4245,Plexus Common Utilities,1.5.4-3.0.23,https://github.com/codehaus-plexus/plexus-utils/commit/f933e5e78dc2637e485447ed821fe14904f110de
+CVE-2022-4244,Plexus Common Utilities,1.4-alpha-1-3.0.23,https://github.com/codehaus-plexus/plexus-utils/commit/33a2853df8185b4519b1b8bfae284f03392618ef
+CVE-2019-0212,Apache HBase - Rest,2.1.0-2.1.3,https://github.com/apache/hbase/commit/7206ef6427d12785b797797a00153b5437e21cb1
+CVE-2019-0212,Apache HBase - Rest,2.0.0-2.0.4,https://github.com/apache/hbase/commit/7206ef6427d12785b797797a00153b5437e21cb1
+CVE-2021-38266,com.liferay.layout.admin.web,1.0.92-5.0.27,https://github.com/community-security-team/liferay-portal/commit/1bfe0fddb35dda44f9a0319d3c6377b439971ca7#diff-a1e01fd4fadada476b16775b5aec9aec080cbe59e8d59f4956672cc5bd3171e0R41-R48
+CVE-2021-38265,com.liferay.layout.admin.web,4.0.26-4.0.80,https://github.com/liferay/liferay-portal/commit/ac8267406785c2e70f4b15aadd604fbe7fb4451b
+CVE-2017-5635,nifi-web-security,0.7.0-0.7.1,https://github.com/apache/nifi/commit/fd6eb669efcf27d3148b624355e2916d3c3e55a5
+CVE-2017-5635,nifi-web-security,0.7.0-0.7.1,https://github.com/apache/nifi/commit/fd6eb669efcf27d3148b624355e2916d3c3e55a5
+CVE-2017-4960,UAA,3.9.0-3.10.0,https://github.com/cloudfoundry/uaa/commit/5eab756eaf4bb397302f00fbd0273f2470009d38
+CVE-2017-8031,UAA,2.3.1-4.7.0,https://github.com/cloudfoundry/uaa/commit/66166d17781aa257ff77a2fb7c69f72d0b611be3
+CVE-2022-22932,Apache Karaf :: OBR :: Core,4.3.0.RC1-4.3.5,https://github.com/apache/karaf/commit/52b70cf5128b4823a829c33cedb9439e8c4259af
+CVE-2022-22932,Apache Karaf :: OBR :: Core,4.2.7-4.2.14,https://github.com/apache/karaf/commit/f41fda346a37f51702a691aaa152a387156192db
+CVE-2019-0224,Apache JSPWiki,2.11.0.M1-2.11.0.M2,https://github.com/apache/jspwiki/commit/b17f699a4a099639beebb905cf4e04a8bea63b3c
+CVE-2019-0224,Apache JSPWiki,2.10.3-2.10.5,https://github.com/apache/jspwiki/commit/b17f699a4a099639beebb905cf4e04a8bea63b3c
+CVE-2018-11797,Apache PDFBox,1.8.0-1.8.15,https://github.com/apache/pdfbox/commit/4fa98533358c106522cd1bfe4cd9be2532af852a
+CVE-2018-11797,Apache PDFBox,2.0.0-RC1-2.0.11,https://github.com/apache/pdfbox/commit/4fa98533358c106522cd1bfe4cd9be2532af852a
+CVE-2020-28923,Play-Java,2.8.0-2.8.4,https://github.com/playframework/playframework/commit/3c4efe218dd8c3f434b2af16d9439052d79d7607
+CVE-2020-28923,Play-Java,2.8.0-2.8.4,https://github.com/playframework/playframework/commit/3c4efe218dd8c3f434b2af16d9439052d79d7607
+CVE-2023-34047,GraphQL Support for Spring Applications,1.1.0-1.1.5,https://github.com/spring-projects/spring-graphql/commit/372feab856b0d9434f22f44ee4262f639cae2457
+CVE-2023-34047,GraphQL Support for Spring Applications,1.2.0-M1-1.2.2,https://github.com/spring-projects/spring-graphql/commit/372feab856b0d9434f22f44ee4262f639cae2457
+CVE-2024-1735,Central Dogma (centraldogma-server-auth-saml),0.33.0-0.64.2,https://github.com/line/centraldogma/commit/16903426be2e954c050b3ee47b8c38ee3218f0eb
+CVE-2023-51770,dolphinscheduler-datasource-mysql,2.0.1-3.2.0,https://github.com/apache/dolphinscheduler/commit/309c8c97a9b9003244496dedc7861a5026f9441a
+CVE-2024-23689,ClickHouse R2DBC Driver,0.4.0-0.4.5,https://github.com/ClickHouse/clickhouse-java/commit/4f8d9303eb991b39ec7e7e34825241efa082238a
+CVE-2023-50740,linkis-configuration,1.3.1-1.4.0,https://github.com/apache/linkis/commit/08cbcfca140afebae10e1582ee87721578719ded
+CVE-2023-37924,Submarine-Server Database ,0.7.0-0.7.0,https://github.com/apache/submarine/commit/4cd2af10499ac6dc4f82bda179d9f414a522abef
+CVE-2023-44794,sa-token-core,1.6.0-1.36.0,https://github.com/dromara/Sa-Token/commit/954efeb73277f924f836da2a25322ea35ee1bfa3
+CVE-2024-0758,MolecularFaces,0.2.0-0.2.0,https://github.com/ipb-halle/MolecularFaces/commit/4bf54aff74555214b4fcd3e81a31e07b900f472a
+CVE-2023-6563,Keycloak Model JPA,14.0.0-20.0.5,https://github.com/keycloak/keycloak/commit/556146f961f7c8ddf64de15e2117a58d045f72b5
+CVE-2022-43402,org.jenkins-ci.plugins.workflow:workflow-cps,1.12-beta-1-2802.v5ea_628154b_c2,https://github.com/jenkinsci/workflow-cps-plugin/commit/1af77ffcc773ffac4eb49956168b9778dca9a3b6	
+CVE-2023-48796,dolphinscheduler-worker,3.0.0-alpha-3.0.1,https://github.com/apache/dolphinscheduler/commit/f2cec3e2593ae5b54dcd7aa992081b84b4b4663a
+CVE-2023-43642,snappy-java,1.0.1-rc1-1.1.10.3,https://github.com/xerial/snappy-java/commit/9f8c3cf74223ed0a8a834134be9c917b9f10ceb5
+CVE-2020-11977,Apache Syncope Ext: Flowable BPMN,2.1.2-2.1.6,https://github.com/apache/syncope/commit/2ef69227e8778361e6a87f048bd435220cda9b7d
+CVE-2023-4061,WildFly: Controller Core,1.0.0.Alpha1-22.0.0.Beta3,https://github.com/wildfly/wildfly-core/commit/25728f370c2e90969854717ba4bb5182727f3f49
+CVE-2023-50298,Apache Solr (module: solrj-zookeeper),9.1.0-9.4.0,https://github.com/apache/solr/commit/e2bf1f434aad873fbb24c21d46ac00e888806d98
+CVE-2023-49620,dolphinscheduler-service,1.3.0-3.0.6,https://github.com/apache/dolphinscheduler/commit/a4948f58e671ab263060da1de255af3ecd2530ac
+CVE-2024-1979,Quarkus - Kubernetes - Vanilla - Deployment,1.10.0.CR1-3.7.2,https://github.com/quarkusio/quarkus/commit/3a3b0d739222a2e476e085a955cfa090739f5924#diff-790f32c6b9d143ce53d34d972c2354512b470b65ac34021babdef4dbb6532d71R993
+CVE-2013-2165,RichFaces Core Implementation,4.0.0.FINAL-4.3.2.FINAL,https://github.com/richfaces4/core/commit/12ee1166f04806b3ba072d27f9a9b3b3feae2ec9
+CVE-2020-11998,ActiveMQ :: Broker,5.15.12-5.15.12,https://github.com/apache/activemq/commit/0d6e5f240ef34bae2e4089102047593bef628e6c
+CVE-2016-3720,Jackson-dataformat-XML,2.0.0-RC1-2.7.3,https://github.com/FasterXML/jackson-dataformat-xml/commit/f0f19a4c924d9db9a1e2830434061c8640092cc0
+CVE-2022-43766,TsFile,0.13.0-0.13.2,https://github.com/apache/iotdb/commit/89c0ec3b963cb44cf94a1efac8f28a5fc475d214
+CVE-2020-24705,WSO2 Carbon - UI,4.3.0-4.5.3,https://github.com/wso2/carbon-kernel/commit/448e1cf7ed04684eddbbb900dc1d80e38949454d
+CVE-2014-5075,Smack,4.0.0-rc1-4.0.1,https://github.com/igniterealtime/Smack/commit/057d00c9de04d576db40c4f2525a74dace9580b4
+CVE-2016-8737,Brooklyn Root,0.7.0-incubating-0.9.0,https://github.com/apache/brooklyn-server/compare/9b24f7d92ecec2b814c78307b7971a585986bff4...45686e4c837478f682d6aec3792c4371b9d0e7cf
+CVE-2023-22849,Apache Sling - CMS UI,0.9.0-1.1.4,https://github.com/apache/sling-org-apache-sling-app-cms/commit/540be07c6fd0af01c8ddb6fca39b06d8e9a60e5c
+CVE-2019-5475,nexus-yum-repository-plugin,2.11.0-2.14.13-01,https://github.com/sonatype/nexus-public/commit/7b9939e71693422d3e09adc3744fa2e9b3a62a63
+CVE-2023-4218,JFace,3.12.1-3.30.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2023-4218,Eclipse Workbench,3.108.2-3.129.0,https://github.com/eclipse-platform/eclipse.platform.ui/commit/f243cf0a28785b89b7c50bf4e1cce48a917d89bd
+CVE-2019-15893,nexus-restlet1x-plugin,2.3.0-2.14.14-01,https://github.com/sonatype/nexus-public/commit/489b60472df89ad90eac84cc46995a54dfe2fb1b
+CVE-2016-15026,dd-plist,1.0-1.16,https://github.com/3breadt/dd-plist/commit/2120e77a988d28fba214714710a43521b4ac62b8
+CVE-2021-39233,Apache Ozone HDDS Common,0.4.1-alpha-1.1.0.7.2.14.0-149,https://github.com/apache/ozone/commit/842e6f6f1002a04eb3dd2c76ef108575f3a751af
+CVE-2016-4978,ActiveMQ Artemis JMS Client,1.0.0-1.3.0,https://github.com/apache/activemq-artemis/compare/d871dfe6225dc4f3c08d9fb9c41069b0849eff2f...d63559a80b8b3d0433e6d510a3b28d117062b034#diff-2e9f5f1215f132badcb6df8cfdc7147dR142
+CVE-2018-1002201,ZT Zip,1.4-1.12,https://github.com/zeroturnaround/zt-zip/commit/759b72f33bc8f4d69f84f09fcb7f010ad45d6fff
+CVE-2024-23686,Dependency-Check Core,5.2.2-9.0.5,https://github.com/jeremylong/DependencyCheck/commit/f7ccabbf43223be25bbc6ab2e456e8e91565711a
+CVE-2023-28465,org.hl7.fhir.validation,5.3.1-5.6.105,https://github.com/hapifhir/org.hl7.fhir.core/commit/909f7e64fea6532a00b3eb8904bf620fc3cae6d1
+CVE-2021-40110,Apache James :: Mailbox :: API,3.1.0-3.6.0,https://github.com/apache/james-project/commit/90ec73f3138e272896d110575eeb063f6eef1d9c
+CVE-2021-23900,json-sanitizer,1.0-1.2.1,https://github.com/OWASP/json-sanitizer/commit/f2c9858c02cf521dd05f2c6f8f9450f2e1343090
+CVE-2019-17555,odata-client-core,4.0.0-beta-03-4.6.0,https://github.com/apache/olingo-odata4/commit/98d445a87447a5424cf5405a559708323f94d94f
+CVE-2020-35211,Atomix Cluster,3.0.0-rc1-3.1.11,https://github.com/atomix/atomix/commit/927aeb9ad868359ac2b300db5b0f93f981aa7277
+CVE-2020-11971,Camel :: Management,3.0.0-M4-3.1.0,https://github.com/apache/camel/commit/36b55f9cfa50a2056c70f98d66c29a95ddc724e1
+CVE-2020-10591,concord-server-impl,1.18.0-1.43.0,https://github.com/walmartlabs/concord/commit/ab32c17f85200545ed6376badc528c7df95f5adb
+CVE-2022-23596,Java Unrar,0.7-7.4.0,https://github.com/junrar/junrar/commit/7b16b3d90b91445fd6af0adfed22c07413d4fab7
+CVE-2017-12626,Apache POI - Common,3.0-FINAL-3.17-beta1,https://github.com/apache/poi/compare/a0b324224b9f756a6c2b9c61e0c66a7dd96f9ea7...a07ed9e86474da98f204efadfd5b9327009a0d21
+CVE-2021-39239,Apache Jena - Core,2.7.0-incubating-4.1.0,https://github.com/apache/jena/commit/66cae9052edef6dd08a172191faad3c50bdbe376
+CVE-2012-3155,GlassFish ORB interface layer implementation,3.1.2-4.0-b72,https://github.com/payara/Payara/commit/76320f867fb410802e2667f72107181d1aa4fde3
+CVE-2015-3250,Apache Directory LDAP API Model,0.0-1.0.0-M30,https://svn.apache.org/viewvc/directory/shared/trunk/ldap/model/src/main/java/org/apache/directory/api/ldap/model/password/PasswordUtil.java?r1=1688300&r2=1688299&pathrev=1688300&view=patch
+CVE-2023-43502,Build Failure Analyzer,1.2.0-2.4.1,https://github.com/jenkinsci/build-failure-analyzer-plugin/commit/a261229a67c52927d531c48ec0a59bf138ebd4d0
+CVE-2019-10753,spotless-eclipse-wtp,3.9.5,https://github.com/diffplug/spotless/commit/b2e61c3197a90becd1375b45549e910ac869aa29
+CVE-2019-12741,HAPI FHIR TestPage Overlay,1.3-3.7.0,https://github.com/jamesagnew/hapi-fhir/commit/8f41159eb147eeb964cad68b28eff97acac6ea9a
+CVE-2012-1006,Struts 2 Showcase Webapp,2.0.11.1-2.2.3,https://github.com/apache/struts/commit/524aee3131503626fdd0a01d2030e826d86f1531
+CVE-2016-4467,proton-project,0.8-0.13.0,https://github.com/apache/qpid-proton/compare/c021ecfa63ac6c676040bfb44bd2863bccc0d753...622dc1f7b1e31e22b3d18068376dedd540a6932b
+CVE-2018-12432,JavaMelody - Core,1.21.1-1.61.0,https://github.com/javamelody/javamelody/commit/2f0716f1e66ded47da75352a953e05ffea886fd7
+CVE-2022-38179,ktor-http,1.0.0-rc-2.0.3,https://github.com/ktorio/ktor/commit/26028bc9e6d8bb1f2448cd4414fd371135ad5e86
+CVE-2020-2933,mysql-connector-java,5.1.6-5.1.48,https://github.com/mysql/mysql-connector-j/commit/e824d25875e2fdfdacf8a09e8d829df00a3db8e7

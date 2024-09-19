@@ -13,10 +13,10 @@ access_token = ''
 base_path1 = 'G:\\Repo'
 
 # 输入的 CSV 文件路径
-input_csv = "E:\\task\\JavaRepair\\1.csv"
+input_csv = "E:\\task\\JavaRepair\\output.csv"
 
 # 输出的 CSV 文件路径
-output_csv = "E:\\task\\JavaRepair\\a.csv"
+output_csv = "E:\\task\\JavaRepair\\result.csv"
 
 # 定义正则表达式模式
 single_line_comment_pattern = re.compile(r'^[+-]?\s*//')
@@ -110,6 +110,10 @@ class DiffParser:
 
         # 匹配函数定义行的正则表达式
         function_pattern = re.compile(r'\b(?:public|private|protected|static|final|synchronized|abstract|native)?\s*(\w+(\[\])?)\s+(\w+)\s*\(.*?\)\s*\{')
+
+        # 控制结构关键字列表
+        control_keywords = {'if', 'else', 'for', 'while', 'switch', 'catch', 'finally', 'try'}
+
         is_find_func = False  # 是否找到函数
 
         # 向上查找，直到找到函数定义或 @@ 行
@@ -117,16 +121,24 @@ class DiffParser:
             prev_line = self.lines[j]
             match_atat = atat.search(prev_line)
             function_match = function_pattern.search(prev_line)
+
             # 寻找函数定义
             if function_match:
-                is_find_func = True
                 function_name = function_match.group(3).strip()
-                break  # 找到函数定义则停止查找
+
+                # 如果匹配到的函数名是控制结构关键字，则跳过，继续向上查找
+                if function_name in control_keywords:
+                    continue  # 跳过控制结构
+                else:
+                    is_find_func = True
+                    break  # 找到函数定义则停止查找
 
             # 到 @@ 行但仍然未找到函数定义，结束程序，返回 None
             if match_atat and not is_find_func:
                 return None
+        
         return function_name
+
     
     def parse_hunk(self):
         """
@@ -137,15 +149,15 @@ class DiffParser:
         """
         # pointer = -1  # 指针，用于记录行索引
         hunk = 0  # Hunk 的数量
+        is_first_func = 0  # 标记为首次函数
         is_in_hunk = 0  # 标志位，表示是否在 Hunk 中
         is_comment = 0  # 标志位，表示是否在注释中
         is_test_case = 0  # 标志位，表示是否为测试用例文件
         is_java_file = 1 # 标志位，表示是否为 Java 文件
         is_count=0
         functions = []  # 函数名集合
-       
+        default_functions = None  # 默认函数名
         for index, line in enumerate(self.lines, start=1):
-
 
             #先判断diff
             if line.startswith("diff"):
@@ -176,17 +188,30 @@ class DiffParser:
                 function_general = re.compile(r'@@.*?@@\s*(.+)\s*\(')
                 match = re.search(function_general, line)
                 if match:
+                    print("找到默认函数")
                     default_functions = match.group(1).strip()  # 获取函数名
                     print("默认函数:", default_functions)
                     is_first_func = 1  # 标记为首次函数
                 else:
                     default_functions = None
-                    is_first_func = 1
+                    is_first_func = 1  # 标记以下没有首次函数
                 is_in_hunk = 0  # 重置 Hunk 标志位
                 is_comment = 0  # 重置注释标志位
                 is_count = 0  # 重置计数标志位
                 continue
+            function_pattern = re.compile(r'\b(?:public|private|protected|static|final|synchronized|abstract|native)?\s*(\w+(\[\])?)\s+(\w+)\s*\(.*?\)\s*\{')
 
+            # 控制结构关键字列表
+            control_keywords = {'if', 'else', 'for', 'while', 'switch', 'catch', 'finally', 'try'}
+
+            if default_functions is None and is_in_hunk == 0:
+                if function_pattern.search(line):
+                    default_functions = function_pattern.search(line).group(3).strip()
+                    if default_functions in control_keywords:
+                        default_functions = None
+                    else :
+                        # is_first_func = 1 # 找到默认函数
+                        print("默认函数:", default_functions)
             # 结束多行注释
             if line.find('*/') != -1 and is_comment == 1:
                 is_comment = 0  # 注释结束
@@ -216,7 +241,7 @@ class DiffParser:
                 #从此往后就是以+或者-开头的修改行
                 #处理空行和注释
                 if bool(empty_or_whitespace_pattern.match(line[1:])) or single_line_comment_pattern.match(line):
-                    pointer = index
+                    # pointer = index
                     continue
 
 
@@ -226,15 +251,15 @@ class DiffParser:
                         is_comment = 0
                     else :
                         is_comment = 1
-                    pointer = index
+                    # pointer = index
                     continue
 
                 if line.find('import') != -1 or line.find('package') != -1:
-                    pointer = index
+                    # pointer = index
                     continue
 
                 #此时就认为出现了有意义的修改行
-                pointer = index
+                # pointer = index
                 if not is_count:
                     hunk += 1
                     # print(line)
@@ -276,9 +301,9 @@ class DiffParser:
                 #         print("line:", line)
 
         # if is_in_hunk == 1:
-        #     hunk += 1
-        print("块:",hunk)
-        print("函数:",functions)
+        # #     hunk += 1
+        # print("块:",hunk)
+        # print("函数:",functions)
         return hunk, functions
 
 
@@ -311,9 +336,9 @@ class DiffParser:
                 if line.endswith(".java"):
                     java_file += 1
 
-        print("[java_file]:", java_file)
-        print("[file]:", file)
-        print("[test_in_commit]:", test_in_commit)
+        # print("[java_file]:", java_file)
+        # print("[file]:", file)
+        # print("[test_in_commit]:", test_in_commit)
         return file, java_file, test_in_commit
     
     # def extract_diff_file_and_lines(self):
@@ -432,8 +457,8 @@ def get_commit_subject(commit_hash, repo_path):
     if result.returncode == 0:
         return result.stdout.strip()
     else:
-        print("Failed to get commit subject")
-        print("Error:", result.stderr)
+        # print("Failed to get commit subject")
+        # print("Error:", result.stderr)
         return None
 
 if __name__ == '__main__':
@@ -453,7 +478,7 @@ if __name__ == '__main__':
     # 输出 CSV 文件初始化
     with open(output_csv, 'w') as f:
         f.write("url,repo,file,java_file,func,hunk,test,note\n")
-
+    index = 1
     # 分析每个仓库的提交记录
     for url in urls:
         try:
@@ -473,20 +498,39 @@ if __name__ == '__main__':
                     # print("it is solved")
                     diff_output = res
             parser = DiffParser(diff_output)
-            with open(output_csv, 'a') as f:
+            
+            with open(output_csv, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+
+                # 获取文件、函数、块等相关数据
                 file, java_file, test_in_commit = parser.parse_file()
-                result = parser.parse_hunk()
                 hunk, functions = parser.parse_hunk()
 
-                string = "URL: {}   Repo: {}   file: {}   java_file: {}   functions: {}   hunk: {}\n".format(url, repo, file, java_file, functions, hunk)
-                test_in_repo = 0
-                if test_in_commit == 0:
-                    if test_finder(url):
-                        test_in_repo = 1
+                # 计算非Java文件和Java文件的数量
 
-                string = "{},{},{},{},{},{},{},{}\n".format(url, repository_name, file, java_file, len(functions), hunk, test_in_commit | test_in_repo, note)
-                f.write(string)
-                print(string)
+                non_java_file = file - java_file
+                
+                # 生成每一行的数据
+                row = [
+                    index,  # 索引编号
+                    "",  # cwe key word
+                    "",  # matched key word
+                    f"{file}({java_file})" if file > java_file else str(file),  # 文件数量，格式: n(m)
+                    len(list(set(functions))),  # 函数数量
+                    hunk,  # 修改块数量
+                    "",  # num_lines_added/deleted （占位符，留空）
+                    functions,  # function_name （占位符，留空）
+                    "",  # note （占位符，留空）
+                    "",  # 分支名称
+                    repo,  # 仓库名称
+                    url  # 补丁链接
+                ]
+                index += 1
+                # 写入CSV行
+                print(row)
+                writer.writerow(row)
+
+                # print(string)
         except Exception as e:
             print(f"Error processing {url}: {e}")
             continue
