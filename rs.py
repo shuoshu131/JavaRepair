@@ -10,19 +10,20 @@ from concurrent.futures import ThreadPoolExecutor
 access_token = ''
 
 # 本地存放所有仓库的目录
-base_path1 = 'G:\\Repo'
+base_path1 = r'D:\linshi_zancun_repo'
 
 # 输入的 CSV 文件路径
-input_csv = "E:\\task\\JavaRepair\\output.csv"
+input_csv = r"C:\Users\ii\Documents\WeChat Files\wxid_zgkxa84imrfq22\FileStorage\File\2024-09\output.csv"
 
 # 输出的 CSV 文件路径
-output_csv = "E:\\task\\JavaRepair\\result.csv"
+output_csv = r".\111222.csv"
 
 # 定义正则表达式模式
 single_line_comment_pattern = re.compile(r'^[+-]?\s*//')
 multi_line_comment_start_pattern = re.compile(r'^[+-]?\s*/\*')
 multi_line_comment_cont_pattern = re.compile(r'^[+-]?\s*\*')
 empty_or_whitespace_pattern = re.compile(r'^\s*$')
+multi_line_comment_pattern=re.compile(r'^\s*\*')
 
 def clone_repository(url, output_dir):
     """
@@ -38,14 +39,14 @@ def clone_repository(url, output_dir):
         repository_name = re.search(r'/([^/]+/[^/]+)/commit/', url).group(1)
         repo = re.search(r'[^/]+$', repository_name).group()
         repository_url = f"https://{access_token}@github.com/{repository_name}"
-        print(repo)
+        #print(repo)
 
-        if os.path.exists(os.path.join(output_dir, repo)):
-            print(f"Repository {repo} already exists, skipping...")
-            return
+        # if os.path.exists(os.path.join(output_dir, repo)):
+        #     print(f"Repository {repo} already exists, skipping...")
+        #     return
 
         subprocess.run(["git", "clone", repository_url], check=True)
-        print(f"Successfully cloned {url}")
+        print(f"Successfully cloned {repository_url}")
         time.sleep(2)
 
     except Exception as e:
@@ -147,7 +148,6 @@ class DiffParser:
         返回:
         - hunk: Hunk 的数量。 function: 函数名集合。
         """
-        # pointer = -1  # 指针，用于记录行索引
         hunk = 0  # Hunk 的数量
         is_first_func = 0  # 标记为首次函数
         is_in_hunk = 0  # 标志位，表示是否在 Hunk 中
@@ -188,9 +188,9 @@ class DiffParser:
                 function_general = re.compile(r'@@.*?@@\s*(.+)\s*\(')
                 match = re.search(function_general, line)
                 if match:
-                    print("找到默认函数")
+                    #print("找到默认函数")
                     default_functions = match.group(1).strip()  # 获取函数名
-                    print("默认函数:", default_functions)
+                    #print("默认函数:", default_functions)
                     is_first_func = 1  # 标记为首次函数
                 else:
                     default_functions = None
@@ -210,20 +210,21 @@ class DiffParser:
                     if default_functions in control_keywords:
                         default_functions = None
                     else :
-                        # is_first_func = 1 # 找到默认函数
-                        print("默认函数:", default_functions)
+                        #is_first_func = 1 # 找到默认函数
+                        #print("默认函数:", default_functions)+
+                        pass
+
+            # 处理多行注释
+            if multi_line_comment_start_pattern.match(line) or multi_line_comment_pattern.match(line[1:]):
+                    is_comment = 1
+
+
             # 结束多行注释
             if line.find('*/') != -1 and is_comment == 1:
                 is_comment = 0  # 注释结束
-                if is_in_hunk == 1:
-                    # pointer = index
-                    a = 1# 什么都不做
                 continue
 
             if is_comment == 1:
-                if is_in_hunk == 1:
-                    # pointer = index
-                    a = 1# 什么都不做
                 continue
 
             if any(line.startswith(ignore) for ignore in ["+++", "---"]):
@@ -241,28 +242,17 @@ class DiffParser:
                 #从此往后就是以+或者-开头的修改行
                 #处理空行和注释
                 if bool(empty_or_whitespace_pattern.match(line[1:])) or single_line_comment_pattern.match(line):
-                    # pointer = index
-                    continue
 
-
-                #处理多行注释
-                if multi_line_comment_start_pattern.match(line):
-                    if not line.find('*/') == -1:
-                        is_comment = 0
-                    else :
-                        is_comment = 1
-                    # pointer = index
                     continue
 
                 if line.find('import') != -1 or line.find('package') != -1:
-                    # pointer = index
+
                     continue
 
                 #此时就认为出现了有意义的修改行
-                # pointer = index
                 if not is_count:
                     hunk += 1
-                    # print(line)
+                    print(line)
                 is_count=1
                 if is_first_func:
                     functions.append(default_functions)
@@ -276,34 +266,6 @@ class DiffParser:
                     elif default_functions is not None and function is None:
                         # 未找到函数，使用默认函数名
                         functions.append(default_functions)
-                # else:
-                #     if index == (pointer + 1):
-                #         is_in_hunk=1
-                #         pointer = index
-                #     else:
-                #         if is_in_hunk == 1:
-                #             pointer = index
-                #         hunk += 1
-                #         if default_functions is not None and is_first_func:
-                #             functions.append(default_functions)
-                #             is_first_func = 0
-                #         elif not is_first_func:
-                #             function = None
-                #             # 倒查diff至找到函数,返回值为函数名
-                #             function = self.extract_functions(index)
-                #             if default_functions is None and function is None:
-                #                 # 认为找不到hunk对应的函数，跳过
-                #                 continue
-                #             elif default_functions is not None and function is None:
-                #                 # 未找到函数，使用默认函数名
-                #                 functions.append(default_functions)
-                #         print("hunk:", hunk)
-                #         print("line:", line)
-
-        # if is_in_hunk == 1:
-        # #     hunk += 1
-        # print("块:",hunk)
-        # print("函数:",functions)
         return hunk, functions
 
 
@@ -469,37 +431,37 @@ if __name__ == '__main__':
         reader = csv.reader(csvfile)
         urls = [row[3] for row in reader]
 
-    # 克隆所有仓库
+    #克隆所有仓库
     # os.chdir(base_path1)
     # with ThreadPoolExecutor(max_workers=max_workers) as executor:
     #     for url in urls:
     #         executor.submit(clone_repository, url, base_path1)
 
     # 输出 CSV 文件初始化
-    with open(output_csv, 'w') as f:
+    with open(output_csv, 'w',newline='', encoding='utf-8') as f:
         f.write("url,repo,file,java_file,func,hunk,test,note\n")
-    index = 1
+        index = 1
     # 分析每个仓库的提交记录
-    for url in urls:
-        try:
-            commit_hash = extract_commit_hash(url)
-            repo = repository_name = re.search(r'/([^/]+/[^/]+)/commit/', url).group(1)
-            repo = re.search(r'[^/]+$', repository_name).group()
-            note = get_commit_subject(commit_hash, repo)
-            os.chdir(os.path.join(base_path1, repo))
-            diff_command = f'git diff {commit_hash}^..{commit_hash}'  # 注意添加了空格
-            diff_output = subprocess.run(['pwsh', '-Command', diff_command], capture_output=True, text=True, encoding='utf-8').stdout
-            # print(diff_command)
-            if len(diff_output) < 1:
-                # print("the repo local is bad")
-                diff_url = url + '.diff'
-                res = requests.get(diff_url).text
-                if res is not None:
-                    # print("it is solved")
-                    diff_output = res
-            parser = DiffParser(diff_output)
-            
-            with open(output_csv, 'a', newline='', encoding='utf-8') as f:
+        for url in urls:
+            try:
+                commit_hash = extract_commit_hash(url)
+                repo = repository_name = re.search(r'/([^/]+/[^/]+)/commit/', url).group(1)
+                repo = re.search(r'[^/]+$', repository_name).group()
+                note = get_commit_subject(commit_hash, repo)
+                os.chdir(os.path.join(base_path1, repo))
+                diff_command = f'git diff {commit_hash}^..{commit_hash}'  # 注意添加了空格
+                diff_output = subprocess.run(['powershell', '-Command', diff_command], capture_output=True, text=True, encoding='utf-8').stdout
+                # print(diff_command)
+                if len(diff_output) < 1:
+                    # print("the repo local is bad")
+                    diff_url = url + '.diff'
+                    res = requests.get(diff_url).text
+                    if res is not None:
+                        # print("it is solved")
+                        diff_output = res
+                parser = DiffParser(diff_output)
+
+
                 writer = csv.writer(f)
 
                 # 获取文件、函数、块等相关数据
@@ -509,7 +471,7 @@ if __name__ == '__main__':
                 # 计算非Java文件和Java文件的数量
 
                 non_java_file = file - java_file
-                
+
                 # 生成每一行的数据
                 row = [
                     index,  # 索引编号
@@ -527,10 +489,11 @@ if __name__ == '__main__':
                 ]
                 index += 1
                 # 写入CSV行
+
                 print(row)
                 writer.writerow(row)
 
                 # print(string)
-        except Exception as e:
-            print(f"Error processing {url}: {e}")
-            continue
+            except Exception as e:
+                print(f"Error processing {url}: {e}")
+                continue
