@@ -126,7 +126,7 @@ class DiffParser:
         返回:
         - hunk: Hunk 的数量。 function: 函数名集合。
         """
-        pointer = -1  # 指针，用于记录行索引
+        #pointer = -1  # 指针，用于记录行索引
         hunk = 0  # Hunk 的数量
         is_in_hunk = 0  # 标志位，表示是否在 Hunk 中
         is_comment = 0  # 标志位，表示是否在注释中
@@ -138,8 +138,6 @@ class DiffParser:
                                   r'\s*(?:static)?\s*[\w<>\[\]]+\s+(\w+)\s*\(([^)]*)\)\s*(throws\s+\w+(?:\s*,\s*\w+)*)?\s*{')
 
         for index, line in enumerate(self.lines, start=1):
-
-
             #先判断diff
             if line.startswith("diff"):
                 is_test_case = 0  # 重置测试用例标志位
@@ -183,13 +181,9 @@ class DiffParser:
             # 结束多行注释
             if line.find('*/') != -1 and is_comment == 1:
                 is_comment = 0  # 注释结束
-                if is_in_hunk == 1:
-                    pointer = index
                 continue
 
             if is_comment == 1:
-                if is_in_hunk == 1:
-                    pointer = index
                 continue
 
             if any(line.startswith(ignore) for ignore in ["+++", "---"]):
@@ -207,7 +201,6 @@ class DiffParser:
                 #从此往后就是以+或者-开头的修改行
                 #处理空行和注释
                 if bool(empty_or_whitespace_pattern.match(line[1:])) or single_line_comment_pattern.match(line):
-                    pointer = index
                     continue
 
 
@@ -217,15 +210,13 @@ class DiffParser:
                         is_comment = 0
                     else :
                         is_comment = 1
-                    pointer = index
                     continue
 
                 if line.find('import') != -1 or line.find('package') != -1:
-                    pointer = index
                     continue
 
                 #此时就认为出现了有意义的修改行
-                pointer = index
+
                 if not is_count:
                     hunk += 1
                     print(line)
@@ -243,34 +234,6 @@ class DiffParser:
                     elif default_functions is not None and function is None:
                         # 未找到函数，使用默认函数名
                         functions.append(default_functions)
-                # else:
-                #     if index == (pointer + 1):
-                #         is_in_hunk=1
-                #         pointer = index
-                #     else:
-                #         if is_in_hunk == 1:
-                #             pointer = index
-                #         hunk += 1
-                #         if default_functions is not None and is_first_func:
-                #             functions.append(default_functions)
-                #             is_first_func = 0
-                #         elif not is_first_func:
-                #             function = None
-                #             # 倒查diff至找到函数,返回值为函数名
-                #             function = self.extract_functions(index)
-                #             if default_functions is None and function is None:
-                #                 # 认为找不到hunk对应的函数，跳过
-                #                 continue
-                #             elif default_functions is not None and function is None:
-                #                 # 未找到函数，使用默认函数名
-                #                 functions.append(default_functions)
-                #         print("hunk:", hunk)
-                #         print("line:", line)
-
-        # if is_in_hunk == 1:
-        #     hunk += 1
-        #print(hunk)
-       # print(functions)
         return hunk, functions
 
 
